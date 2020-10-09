@@ -1,3 +1,1 @@
-# Fridays for Future Paderborn Theme
-
-Custom Wordpress Theme for Fridays for Future Paderborn
+# This is the Wordpress installation for Fridays for Future Paderborn 👋
