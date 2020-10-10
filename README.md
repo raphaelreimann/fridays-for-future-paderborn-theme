@@ -1,4 +1,5 @@
 ![NPM](https://img.shields.io/npm/l/wordpress)
+<img src="https://img.shields.io/github/last-commit/raphaelreimann/fridays-for-future-paderborn-theme" />
 
 # Fridays for Future Paderborn Wordpress Theme 🌱
 
