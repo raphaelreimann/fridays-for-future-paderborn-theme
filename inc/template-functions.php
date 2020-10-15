@@ -1,9 +1,9 @@
 <?php
-require_once( 'events_api.php' );
+require_once('events_api.php');
 /**
  * Functions which enhance the theme by hooking into WordPress
  *
- * @package Sunrise_National
+ * @package fridays_for_future_paderborn
  */
 
 /**
@@ -12,30 +12,32 @@ require_once( 'events_api.php' );
  * @param array $classes Classes for the body element.
  * @return array
  */
-function surnise_national_body_classes( $classes ) {
+function surnise_national_body_classes($classes)
+{
 	// Adds a class of hfeed to non-singular pages.
-	if ( ! is_singular() ) {
+	if (!is_singular()) {
 		$classes[] = 'hfeed';
 	}
 
 	// Adds a class of no-sidebar when there is no sidebar present.
-	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+	if (!is_active_sidebar('sidebar-1')) {
 		$classes[] = 'no-sidebar';
 	}
 
 	return $classes;
 }
-add_filter( 'body_class', 'surnise_national_body_classes' );
+add_filter('body_class', 'surnise_national_body_classes');
 
 /**
  * Add a pingback url auto-discovery header for single posts, pages, or attachments.
  */
-function surnise_national_pingback_header() {
-	if ( is_singular() && pings_open() ) {
-		printf( '<link rel="pingback" href="%s">', esc_url( get_bloginfo( 'pingback_url' ) ) );
+function surnise_national_pingback_header()
+{
+	if (is_singular() && pings_open()) {
+		printf('<link rel="pingback" href="%s">', esc_url(get_bloginfo('pingback_url')));
 	}
 }
-add_action( 'wp_head', 'surnise_national_pingback_header' );
+add_action('wp_head', 'surnise_national_pingback_header');
 
 
 // ======================================================
@@ -53,15 +55,16 @@ const ACTION_TAG_STR = "<script type=\"text/javascript\" src=\"https://d1aqhv4sn
 // =========== Custom Post Type Manipulation ================
 // ================ Fetching / Storage ==================
 /**
-* Creates a wordpress post of the "event" post type from the json array passed in representing a single OnlineAction json object.
-* Done By: Andrew Jones
-*/
-function createEventPost($onlineAction) {
+ * Creates a wordpress post of the "event" post type from the json array passed in representing a single OnlineAction json object.
+ * Done By: Andrew Jones
+ */
+function createEventPost($onlineAction)
+{
 
 	try {
 		// insert the post and set the category
-		echo "Creating '".$onlineAction['name']."' Form post";
-		$post_id = wp_insert_post(array (
+		echo "Creating '" . $onlineAction['name'] . "' Form post";
+		$post_id = wp_insert_post(array(
 			'post_type' => 'events',
 			'post_title' => $onlineAction['event_title'],
 			'post_content' => '',
@@ -79,9 +82,10 @@ function createEventPost($onlineAction) {
 		update_field('status', $onlineAction['status'], $post_id);
 		update_field('featured_image_url', $onlineAction['featured_image_url'], $post_id);
 		update_field('description', $onlineAction['description'], $post_id);
-	}
-	catch (exception $e) {
-		echo '<pre>'; print_r($e); echo '</pre>';
+	} catch (exception $e) {
+		echo '<pre>';
+		print_r($e);
+		echo '</pre>';
 		return false;
 	}
 	return true;
@@ -92,9 +96,10 @@ function createEventPost($onlineAction) {
 // form tracking id. Existence of a post for a given OnlineAction can be determined by checking for the json file existence.
 // Done By: Andrew Wilson
 
-function fetchNewOnlineActions($bypassTimer = null) {
-	$ONLINE_ACTION_DIR = get_template_directory().DIRECTORY_SEPARATOR."ea8".DIRECTORY_SEPARATOR."Action".DIRECTORY_SEPARATOR;
-	$LAST_EA_API_CALL_TIME = get_template_directory().DIRECTORY_SEPARATOR."ea8".DIRECTORY_SEPARATOR."lastApiCallTime.json";
+function fetchNewOnlineActions($bypassTimer = null)
+{
+	$ONLINE_ACTION_DIR = get_template_directory() . DIRECTORY_SEPARATOR . "ea8" . DIRECTORY_SEPARATOR . "Action" . DIRECTORY_SEPARATOR;
+	$LAST_EA_API_CALL_TIME = get_template_directory() . DIRECTORY_SEPARATOR . "ea8" . DIRECTORY_SEPARATOR . "lastApiCallTime.json";
 
 	// make directory if it doesn't exist
 	$fileExist = file_exists($ONLINE_ACTION_DIR);
@@ -104,7 +109,7 @@ function fetchNewOnlineActions($bypassTimer = null) {
 		mkdir($ONLINE_ACTION_DIR, 0777, true);
 	}
 
-	if (is_null($bypassTimer) || empty($bypassTimer)){
+	if (is_null($bypassTimer) || empty($bypassTimer)) {
 		return;
 		if (!checkApiCallTimer()) {
 			return;
@@ -116,7 +121,7 @@ function fetchNewOnlineActions($bypassTimer = null) {
 	echovar($filteredOnlineActions);
 	foreach ($filteredOnlineActions as $onlineAction) {
 
-		$actionJsonFilepath = $ONLINE_ACTION_DIR.$onlineAction['form_tracking_id'].".json";
+		$actionJsonFilepath = $ONLINE_ACTION_DIR . $onlineAction['form_tracking_id'] . ".json";
 
 		// if a file exists for a given formTrackingId, update the contents, but do not create a post and then move on
 		if (file_exists($actionJsonFilepath)) {
@@ -135,7 +140,8 @@ function fetchNewOnlineActions($bypassTimer = null) {
  * The time of the last API call is persisted in a file stored in $LAST_EA_API_CALL_TIME to persist between requests.
  * Returns true if enough time has past since the last call, false if not.
 */
-function checkApiCallTimer() {
+function checkApiCallTimer()
+{
 	$runNow = false;
 	if (!file_exists($LAST_EA_API_CALL_TIME)) {
 		return true;
@@ -153,7 +159,8 @@ function checkApiCallTimer() {
 }
 
 // This function sets the last time that the API was called and stores it in a persisted file for quick reference
-function setLastCallDate() {
+function setLastCallDate()
+{
 	$now = new DateTime("now");
 	file_put_contents($LAST_EA_API_CALL_TIME, json_encode($now));
 }
@@ -161,18 +168,23 @@ function setLastCallDate() {
 // echo '<pre>'; print_r($filteredOnlineActions); echo '</pre>';
 // Call EveryAction API and return a json object with an array called "items" that contains all of the OnlineAction json objects returned
 // Called by fetchNewOnlineActionForms
-function getOnlineActionsFromApi() {
+function getOnlineActionsFromApi()
+{
 	$eventsApi = new EventsAPI();
 	$onlineActions = $eventsApi->fetchOnlineActions();
 	setLastCallDate();
 	return $onlineActions;
 }
 
-function echoVar($var) {
-	echo '<pre>'; print_r($var); echo '</pre>';
+function echoVar($var)
+{
+	echo '<pre>';
+	print_r($var);
+	echo '</pre>';
 }
 
-function addDashboardWidgets() {
+function addDashboardWidgets()
+{
 	wp_add_dashboard_widget('everyaction_fetch_data_widget', 'Fetch Everyaction Data', 'renderFetchOnlineActionsButton');
 }
 add_action('wp_dashboard_setup', 'addDashboardWidgets');
@@ -180,57 +192,62 @@ add_action('wp_ajax_ea_action', 'onEveryactionAdminButtonClick');
 /**
  * Add javascript file
  */
-function addAjaxScript($hook) {
+function addAjaxScript($hook)
+{
 	// add JS-File only on the dashboard page
 	if ('index.php' !== $hook) {
 		return;
 	}
-	$scriptLocation = get_template_directory_uri()."/ea8/ea8_widget_ajax_script.js";
+	$scriptLocation = get_template_directory_uri() . "/ea8/ea8_widget_ajax_script.js";
 	wp_enqueue_script('ea8_widget_ajax_script', $scriptLocation, array(), NULL, true);
 }
 add_action('admin_enqueue_scripts', 'addAjaxScript');
 
 
-function renderFetchOnlineActionsButton() {
-	?>
-	<form id="ea_form" action="<?php echo esc_url( admin_url( 'admin-ajax.php' ) ); ?>" method="post">
+function renderFetchOnlineActionsButton()
+{
+?>
+	<form id="ea_form" action="<?php echo esc_url(admin_url('admin-ajax.php')); ?>" method="post">
 		<input type="hidden" name="ea_action" id="ea_action" value="ea_action">
 		<p class="submit">
-			<?php submit_button( __( 'Update Everyaction Data' ), 'primary', 'save', false ); ?>
+			<?php submit_button(__('Update Everyaction Data'), 'primary', 'save', false); ?>
 		</p>
 	</form>
-	<?php
+<?php
 	return;
 }
 
-function onEveryactionAdminButtonClick() {
+function onEveryactionAdminButtonClick()
+{
 	fetchNewOnlineActions(true);
 	echo "Everyaction Data Updated Successfully";
 }
 
-function ea_scheduleCronJobs() {
-	if ( !wp_next_scheduled( 'ea_delete_old_events' ) ) {
+function ea_scheduleCronJobs()
+{
+	if (!wp_next_scheduled('ea_delete_old_events')) {
 		wp_schedule_event(time(), 'daily', 'ea_delete_old_events');
 	}
 }
-function ea_deleteOldEvents() {
+function ea_deleteOldEvents()
+{
 	$posts = get_posts([
 		'numberposts' => '-1', // -1 for all posts
-	  	'post_type' => 'events',
-	  	'post_status' => 'publish',
+		'post_type' => 'events',
+		'post_status' => 'publish',
 		'fields' => 'ids'
 	]);
-	foreach($posts as $postId) {
+	foreach ($posts as $postId) {
 		$deletePost = false;
-		if( !get_field('event_start_date', $postId) ) {
+		if (!get_field('event_start_date', $postId)) {
 			$deletePost = true;
 		}
 		$eventDateTime = new DateTime(get_field('event_start_date', $postId));
 		$now = new DateTime("now");
 		// if the post is already marked for deleted or if the event's start date is in the past, delete the post.
-		$deletePost = $deletePost || ( $now > $eventDateTime );
+		$deletePost = $deletePost || ($now > $eventDateTime);
 
-		if($deletePost) {
+		if ($deletePost) {
 			wp_delete_post($postId);
 		}
 	}

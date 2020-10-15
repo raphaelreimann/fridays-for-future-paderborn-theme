@@ -1,10 +1,11 @@
 <?php
+
 /**
  * Jetpack Compatibility File
  *
  * @link https://jetpack.com/
  *
- * @package Sunrise_National
+ * @package fridays_for_future_paderborn
  */
 
 /**
@@ -14,19 +15,20 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function sunrise_national_jetpack_setup() {
+function fridays_for_future_paderborn_jetpack_setup()
+{
 	// Add theme support for Infinite Scroll.
-	add_theme_support( 'infinite-scroll', array(
+	add_theme_support('infinite-scroll', array(
 		'container' => 'main',
-		'render'    => 'sunrise_national_infinite_scroll_render',
+		'render'    => 'fridays_for_future_paderborn_infinite_scroll_render',
 		'footer'    => 'page',
-	) );
+	));
 
 	// Add theme support for Responsive Videos.
-	add_theme_support( 'jetpack-responsive-videos' );
+	add_theme_support('jetpack-responsive-videos');
 
 	// Add theme support for Content Options.
-	add_theme_support( 'jetpack-content-options', array(
+	add_theme_support('jetpack-content-options', array(
 		'post-details'    => array(
 			'stylesheet' => 'sunrise-national-style',
 			'date'       => '.posted-on',
@@ -40,20 +42,21 @@ function sunrise_national_jetpack_setup() {
 			'post'       => true,
 			'page'       => true,
 		),
-	) );
+	));
 }
-add_action( 'after_setup_theme', 'sunrise_national_jetpack_setup' );
+add_action('after_setup_theme', 'fridays_for_future_paderborn_jetpack_setup');
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function sunrise_national_infinite_scroll_render() {
-	while ( have_posts() ) {
+function fridays_for_future_paderborn_infinite_scroll_render()
+{
+	while (have_posts()) {
 		the_post();
-		if ( is_search() ) :
-			get_template_part( 'template-parts/content/content', 'search' );
+		if (is_search()) :
+			get_template_part('template-parts/content/content', 'search');
 		else :
-			get_template_part( 'template-parts/content/content', get_post_type() );
+			get_template_part('template-parts/content/content', get_post_type());
 		endif;
 	}
 }

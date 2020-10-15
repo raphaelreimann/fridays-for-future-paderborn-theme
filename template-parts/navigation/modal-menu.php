@@ -1,9 +1,10 @@
 <?php
+
 /**
  * Displays the menu icon and modal
  *
  * @package SunriseNational
- * @subpackage Sunrise_National
+ * @subpackage fridays_for_future_paderborn
  *
  */
 
@@ -18,8 +19,8 @@
 			<div class="menu-top">
 
 				<button class="menu-modal-close-button toggle close-nav-toggle fill-children-current-color" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".menu-modal">
-					<span class="toggle-text"><?php _e( 'Close Menu', 'sunrisenational' ); ?></span>
-					<?php sunrisenational_the_theme_svg( 'cross' ); ?>
+					<span class="toggle-text"><?php _e('Close Menu', 'sunrisenational'); ?></span>
+					<?php sunrisenational_the_theme_svg('cross'); ?>
 				</button><!-- .nav-toggle -->
 
 				<?php
@@ -27,29 +28,29 @@
 				$mobile_menu_location = '';
 
 				// If the mobile menu location is not set, use the primary and expanded locations as fallbacks, in that order.
-				if ( has_nav_menu( 'mobile' ) ) {
+				if (has_nav_menu('mobile')) {
 					$mobile_menu_location = 'mobile';
-				} elseif ( has_nav_menu( 'primary' ) ) {
+				} elseif (has_nav_menu('primary')) {
 					$mobile_menu_location = 'primary';
-				} elseif ( has_nav_menu( 'expanded' ) ) {
+				} elseif (has_nav_menu('expanded')) {
 					$mobile_menu_location = 'expanded';
 				}
 
-				if ( has_nav_menu( 'primary' ) ) {
+				if (has_nav_menu('primary')) {
 
 					$expanded_nav_classes = '';
 
-					if ( 'primary' === $mobile_menu_location ) {
+					if ('primary' === $mobile_menu_location) {
 						$expanded_nav_classes .= ' mobile-menu';
 					}
 
-					?>
+				?>
 
-					<nav class="expanded-menu<?php echo esc_attr( $expanded_nav_classes ); ?>" aria-label="<?php esc_attr_e( 'Expanded', 'sunrisenational' ); ?>" role="navigation">
+					<nav class="expanded-menu<?php echo esc_attr($expanded_nav_classes); ?>" aria-label="<?php esc_attr_e('Expanded', 'sunrisenational'); ?>" role="navigation">
 
 						<ul class="modal-menu reset-list-style">
 							<?php
-							if ( has_nav_menu( 'expanded' ) ) {
+							if (has_nav_menu('expanded')) {
 								wp_nav_menu(
 									array(
 										'container'      => '',
@@ -64,47 +65,45 @@
 
 					</nav>
 
-					<?php
+				<?php
 				}
 
-				if ( 'primary' !== $mobile_menu_location ) {
-					?>
+				if ('primary' !== $mobile_menu_location) {
+				?>
 
-					<nav class="mobile-menu" aria-label="<?php esc_attr_e( 'Mobile', 'sunrisenational' ); ?>" role="navigation">
+					<nav class="mobile-menu" aria-label="<?php esc_attr_e('Mobile', 'sunrisenational'); ?>" role="navigation">
 
 						<ul class="modal-menu reset-list-style">
 
-						<?php
-						if ( $mobile_menu_location ) {
+							<?php
+							if ($mobile_menu_location) {
 
-							wp_nav_menu(
-								array(
-									'container'      => '',
-									'items_wrap'     => '%3$s',
-									'show_toggles'   => true,
-									'theme_location' => $mobile_menu_location,
-								)
-							);
+								wp_nav_menu(
+									array(
+										'container'      => '',
+										'items_wrap'     => '%3$s',
+										'show_toggles'   => true,
+										'theme_location' => $mobile_menu_location,
+									)
+								);
+							} else {
 
-						} else {
-
-							wp_list_pages(
-								array(
-									'match_menu_classes' => true,
-									'show_toggles'       => true,
-									'title_li'           => false,
-									'walker'             => new SunriseNational_Walker_Page(),
-								)
-							);
-
-						}
-						?>
+								wp_list_pages(
+									array(
+										'match_menu_classes' => true,
+										'show_toggles'       => true,
+										'title_li'           => false,
+										'walker'             => new SunriseNational_Walker_Page(),
+									)
+								);
+							}
+							?>
 
 						</ul>
 
 					</nav>
 
-					<?php
+				<?php
 				}
 				?>
 
@@ -112,8 +111,8 @@
 
 			<div class="menu-bottom">
 
-				<?php if ( has_nav_menu( 'social' ) ) { ?>
-					<nav aria-label="<?php esc_attr_e( 'Expanded Social links', 'sunrisenational' ); ?>" role="navigation">
+				<?php if (has_nav_menu('social')) { ?>
+					<nav aria-label="<?php esc_attr_e('Expanded Social links', 'sunrisenational'); ?>" role="navigation">
 						<ul class="social-menu reset-list-style social-icons fill-children-current-color">
 
 							<?php

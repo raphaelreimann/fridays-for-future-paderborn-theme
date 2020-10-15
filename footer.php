@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -6,94 +7,94 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Sunrise_National
+ * @package fridays_for_future_paderborn
  */
 
 ?>
 
-	</div><!-- #content -->
+</div><!-- #content -->
 
-	<?php
-		get_template_part( 'template-parts/footer/nav-blocks', '' );
-	?>
+<?php
+get_template_part('template-parts/footer/nav-blocks', '');
+?>
 <footer id="site-footer" role="contentinfo" class="header-footer-group">
 
 	<div class="section-inner row">
 
 		<div class="footer-left col-md">
 			<?php
-			$has_footer_top = has_nav_menu( 'footer-top' );
-			$has_footer_left = has_nav_menu( 'footer-left' );
-			$has_footer_right = has_nav_menu( 'footer-right' );
+			$has_footer_top = has_nav_menu('footer-top');
+			$has_footer_left = has_nav_menu('footer-left');
+			$has_footer_right = has_nav_menu('footer-right');
 
 			// Only output the container if there are elements to display.
-			if ( $has_footer_top  || $has_footer_left || $has_footer_right   ) {
-				?>
+			if ($has_footer_top  || $has_footer_left || $has_footer_right) {
+			?>
 
 				<div class="footer-nav-widgets-wrapper header-footer-group">
 
 					<div class="footer-inner section-inner">
 
-							<aside class="footer-widgets-outer-wrapper" role="complementary">
+						<aside class="footer-widgets-outer-wrapper" role="complementary">
 
-								<div class="footer-widgets-wrapper">
+							<div class="footer-widgets-wrapper">
 
-									<?php if ( $has_footer_top ) { ?>
-										<div class="row">
-											<div class="footer-widgets footer-top col-md grid-item">
-												<?php
-												wp_nav_menu(
-													array(
-														'container'      => '',
-														'depth'          => 1,
-														'items_wrap'     => '%3$s',
-														'theme_location' => 'footer-top',
-													)
-												);
-												?>
-											</div>
+								<?php if ($has_footer_top) { ?>
+									<div class="row">
+										<div class="footer-widgets footer-top col-md grid-item">
+											<?php
+											wp_nav_menu(
+												array(
+													'container'      => '',
+													'depth'          => 1,
+													'items_wrap'     => '%3$s',
+													'theme_location' => 'footer-top',
+												)
+											);
+											?>
+										</div>
+									</div>
+
+								<?php } ?>
+
+								<?php if ($has_footer_right) { ?>
+									<div class="row">
+										<div class="footer-widgets col-lg-5 col-6  grid-item">
+											<?php
+											wp_nav_menu(
+												array(
+													'container'      => '',
+													'depth'          => 1,
+													'items_wrap'     => '%3$s',
+													'theme_location' => 'footer-left',
+												)
+											);
+											?>
 										</div>
 
 									<?php } ?>
 
-									<?php if ( $has_footer_right ) { ?>
-										<div class="row">
-											<div class="footer-widgets col-lg-5 col-6  grid-item">
-												<?php
-												wp_nav_menu(
-													array(
-														'container'      => '',
-														'depth'          => 1,
-														'items_wrap'     => '%3$s',
-														'theme_location' => 'footer-left',
-													)
-												);
-												?>
-											</div>
+									<?php if ($has_footer_left) { ?>
 
-										<?php } ?>
-
-										<?php if ( $has_footer_left ) { ?>
-
-											<div class="footer-widgets col-lg-5 col-6 grid-item">
-												<?php
-												wp_nav_menu(
-													array(
-														'container'      => '',
-														'depth'          => 1,
-														'items_wrap'     => '%3$s',
-														'theme_location' => 'footer-right',
-													)
-												);
-												?>
-											</div>
+										<div class="footer-widgets col-lg-5 col-6 grid-item">
+											<?php
+											wp_nav_menu(
+												array(
+													'container'      => '',
+													'depth'          => 1,
+													'items_wrap'     => '%3$s',
+													'theme_location' => 'footer-right',
+												)
+											);
+											?>
 										</div>
+									</div>
 
-									<?php } ?>
+								<?php } ?>
 
-								</div><!-- .footer-widgets-wrapper -->
+							</div><!-- .footer-widgets-wrapper -->
 
-							</aside><!-- .footer-widgets-outer-wrapper -->
+						</aside><!-- .footer-widgets-outer-wrapper -->
 
 					</div><!-- .footer-inner -->
 
@@ -107,15 +108,15 @@
 				<div class="to-the-top-long col-md">
 					<?php
 					/* translators: %s: HTML character for up arrow. */
-					printf( __( 'To the top %s', 'twentytwenty' ), '<span class="arrow" aria-hidden="true">&uarr;</span>' );
+					printf(__('To the top %s', 'twentytwenty'), '<span class="arrow" aria-hidden="true">&uarr;</span>');
 					?>
 				</div><!-- .to-the-top-long -->
 			</a><!-- .to-the-top -->
 			<?php
-			$has_social_menu = has_nav_menu( 'social' );
-			if ( $has_social_menu ) { ?>
+			$has_social_menu = has_nav_menu('social');
+			if ($has_social_menu) { ?>
 
-				<nav aria-label="<?php esc_attr_e( 'Social links', 'sunrisenational' ); ?>" class="footer-social-wrapper">
+				<nav aria-label="<?php esc_attr_e('Social links', 'sunrisenational'); ?>" class="footer-social-wrapper">
 
 					<ul class="social-menu footer-social reset-list-style social-icons fill-children-current-color">
 
@@ -150,13 +151,13 @@
 				<?php
 				echo date_i18n(
 					/* translators: Copyright date format, see https://www.php.net/date */
-					_x( 'Y', 'copyright date format', 'twentytwenty' )
+					_x('Y', 'copyright date format', 'twentytwenty')
 				);
 				?>
 				Sunrise Movement
 			</p><!-- .footer-copyright -->
 
-	</div>
+		</div>
 
 	</div><!-- .section-inner -->
 
@@ -165,4 +166,5 @@
 <?php wp_footer(); ?>
 
 </body>
+
 </html>

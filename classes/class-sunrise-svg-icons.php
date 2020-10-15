@@ -1,18 +1,20 @@
 <?php
+
 /**
  * Custom icons for this theme.
  *
- * @package Sunrise_National
+ * @package fridays_for_future_paderborn
  * @subpackage Twenty_Twenty
  *
  */
 
-if ( ! class_exists( 'SunriseNational_SVG_Icons' ) ) {
+if (!class_exists('SunriseNational_SVG_Icons')) {
 	/**
 	 * SVG ICONS CLASS
 	 * Retrieve the SVG code for the specified icon. Based on a solution in Twenty Nineteen.
 	 */
-	class SunriseNational_SVG_Icons {
+	class SunriseNational_SVG_Icons
+	{
 		/**
 		 * GET SVG CODE
 		 * Get the SVG code for the specified icon
@@ -21,21 +23,22 @@ if ( ! class_exists( 'SunriseNational_SVG_Icons' ) ) {
 		 * @param string $group Icon group.
 		 * @param string $color Color.
 		 */
-		public static function get_svg( $icon, $group = 'ui', $color = '#1A1A1B' ) {
-			if ( 'ui' === $group ) {
+		public static function get_svg($icon, $group = 'ui', $color = '#1A1A1B')
+		{
+			if ('ui' === $group) {
 				$arr = self::$ui_icons;
-			} elseif ( 'social' === $group ) {
+			} elseif ('social' === $group) {
 				$arr = self::$social_icons;
 			} else {
 				$arr = array();
 			}
-			if ( array_key_exists( $icon, $arr ) ) {
+			if (array_key_exists($icon, $arr)) {
 				$repl = '<svg class="svg-icon" aria-hidden="true" role="img" focusable="false" ';
-				$svg  = preg_replace( '/^<svg /', $repl, trim( $arr[ $icon ] ) ); // Add extra attributes to SVG code.
-				$svg  = str_replace( '#1A1A1B', $color, $svg );   // Replace the color.
-				$svg  = str_replace( '#', '%23', $svg );          // Urlencode hashes.
-				$svg  = preg_replace( "/([\n\t]+)/", ' ', $svg ); // Remove newlines & tabs.
-				$svg  = preg_replace( '/>\s*</', '><', $svg );    // Remove whitespace between SVG tags.
+				$svg  = preg_replace('/^<svg /', $repl, trim($arr[$icon])); // Add extra attributes to SVG code.
+				$svg  = str_replace('#1A1A1B', $color, $svg);   // Replace the color.
+				$svg  = str_replace('#', '%23', $svg);          // Urlencode hashes.
+				$svg  = preg_replace("/([\n\t]+)/", ' ', $svg); // Remove newlines & tabs.
+				$svg  = preg_replace('/>\s*</', '><', $svg);    // Remove whitespace between SVG tags.
 				return $svg;
 			}
 			return null;
@@ -47,21 +50,22 @@ if ( ! class_exists( 'SunriseNational_SVG_Icons' ) ) {
 		 *
 		 * @param string $uri The URL to retrieve SVG for.
 		 */
-		public static function get_social_link_svg( $uri ) {
+		public static function get_social_link_svg($uri)
+		{
 			static $regex_map; // Only compute regex map once, for performance.
-			if ( ! isset( $regex_map ) ) {
+			if (!isset($regex_map)) {
 				$regex_map = array();
 				$map       = &self::$social_icons_map; // Use reference instead of copy, to save memory.
-				foreach ( array_keys( self::$social_icons ) as $icon ) {
-					$domains            = array_key_exists( $icon, $map ) ? $map[ $icon ] : array( sprintf( '%s.com', $icon ) );
-					$domains            = array_map( 'trim', $domains ); // Remove leading/trailing spaces, to prevent regex from failing to match.
-					$domains            = array_map( 'preg_quote', $domains );
-					$regex_map[ $icon ] = sprintf( '/(%s)/i', implode( '|', $domains ) );
+				foreach (array_keys(self::$social_icons) as $icon) {
+					$domains            = array_key_exists($icon, $map) ? $map[$icon] : array(sprintf('%s.com', $icon));
+					$domains            = array_map('trim', $domains); // Remove leading/trailing spaces, to prevent regex from failing to match.
+					$domains            = array_map('preg_quote', $domains);
+					$regex_map[$icon] = sprintf('/(%s)/i', implode('|', $domains));
 				}
 			}
-			foreach ( $regex_map as $icon => $regex ) {
-				if ( preg_match( $regex, $uri ) ) {
-					return sunrisenational_get_theme_svg( $icon, 'social' );
+			foreach ($regex_map as $icon => $regex) {
+				if (preg_match($regex, $uri)) {
+					return sunrisenational_get_theme_svg($icon, 'social');
 				}
 			}
 			return null;
@@ -257,6 +261,5 @@ if ( ! class_exists( 'SunriseNational_SVG_Icons' ) ) {
 			'youtube'    => '<svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M21.8,8.001c0,0-0.195-1.378-0.795-1.985c-0.76-0.797-1.613-0.801-2.004-0.847c-2.799-0.202-6.997-0.202-6.997-0.202 h-0.009c0,0-4.198,0-6.997,0.202C4.608,5.216,3.756,5.22,2.995,6.016C2.395,6.623,2.2,8.001,2.2,8.001S2,9.62,2,11.238v1.517 c0,1.618,0.2,3.237,0.2,3.237s0.195,1.378,0.795,1.985c0.761,0.797,1.76,0.771,2.205,0.855c1.6,0.153,6.8,0.201,6.8,0.201 s4.203-0.006,7.001-0.209c0.391-0.047,1.243-0.051,2.004-0.847c0.6-0.607,0.795-1.985,0.795-1.985s0.2-1.618,0.2-3.237v-1.517 C22,9.62,21.8,8.001,21.8,8.001z M9.935,14.594l-0.001-5.62l5.404,2.82L9.935,14.594z"></path></svg>',
 
 		);
-
 	}
 }

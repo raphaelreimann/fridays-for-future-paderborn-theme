@@ -1,30 +1,31 @@
 <?php
+
 /**
-* Template Name: Custom Build
+ * Template Name: Custom Build
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Sunrise_National
+ * @package fridays_for_future_paderborn
  */
 
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main base-page">
+<div id="primary" class="content-area">
+	<main id="main" class="site-main base-page">
 
 		<?php
-		while ( have_posts() ) :
+		while (have_posts()) :
 			the_post();
 
-			get_template_part( 'template-parts/content/content', 'page' );
+			get_template_part('template-parts/content/content', 'page');
 
 
 		endwhile; // End of the loop.
 		?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	</main><!-- #main -->
+</div><!-- #primary -->
 
 <?php
 get_footer();

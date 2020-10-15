@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The header for our theme
  *
@@ -6,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Sunrise_National
+ * @package fridays_for_future_paderborn
  */
 
 ?>
@@ -14,7 +15,7 @@
 <html <?php language_attributes(); ?>>
 
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
@@ -24,7 +25,7 @@
 
 <body <?php body_class(); ?>>
 	<div id="page" class="site">
-		<a class="sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'sunrise-national' ); ?></a>
+		<a class="sr-only sr-only-focusable" href="#content"><?php esc_html_e('Skip to content', 'sunrise-national'); ?></a>
 
 		<header id="masthead" class="site-header">
 			<div class="header-inner section-inner">
@@ -33,11 +34,11 @@
 
 					<div class="header-navigation-wrapper">
 
-						<nav class="header-menu-wrapper " aria-label="<?php esc_attr_e( 'Horizontal', 'sunrisenational' ); ?>" role="navigation">
+						<nav class="header-menu-wrapper " aria-label="<?php esc_attr_e('Horizontal', 'sunrisenational'); ?>" role="navigation">
 							<div class="top-menu d-none d-md-flex">
 								<ul class="secondary-menu header-menu top">
 									<?php
-									if ( has_nav_menu( 'secondary' ) ) {
+									if (has_nav_menu('secondary')) {
 										wp_nav_menu(
 											array(
 												'container'  => '',
@@ -45,12 +46,12 @@
 												'theme_location' => 'secondary',
 											)
 										);
-										}
-										?>
+									}
+									?>
 								</ul>
 
-								<?php if ( has_nav_menu( 'social' ) ) { ?>
-									<nav class="social-menu" aria-label="<?php esc_attr_e( 'Expanded Social links', 'sunrisenational' ); ?>" role="navigation">
+								<?php if (has_nav_menu('social')) { ?>
+									<nav class="social-menu" aria-label="<?php esc_attr_e('Expanded Social links', 'sunrisenational'); ?>" role="navigation">
 										<ul class="social-menu reset-list-style social-icons fill-children-current-color">
 
 											<?php
@@ -72,9 +73,9 @@
 
 										</ul>
 									</nav><!-- .social-menu -->
-									<?php } ?>
+								<?php } ?>
 
-						</div>
+							</div>
 							<div class="bottom-menu">
 								<a href="/" class="site-branding">
 									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/sunrise-logo.png" width="" height="" alt="Sunrise Movement Logo" />
@@ -82,13 +83,13 @@
 								<ul class="header-menu bottom primary-menu d-none d-md-flex">
 									<?php
 
-										if (  has_nav_menu( 'primary' ) ) {
-											wp_nav_menu(
-												array(
-													'container'  => '',
-													'items_wrap' => '%3$s',
-													'theme_location' => 'primary',
-												)
+									if (has_nav_menu('primary')) {
+										wp_nav_menu(
+											array(
+												'container'  => '',
+												'items_wrap' => '%3$s',
+												'theme_location' => 'primary',
+											)
 										);
 									}
 									?>
@@ -101,22 +102,22 @@
 										<button class="toggle nav-toggle desktop-nav-toggle btn btn-dark" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
 											<span class="toggle-inner">
 												<span class="toggle-icon">
-													<?php sunrisenational_the_theme_svg( 'ellipsis' ); ?>
+													<?php sunrisenational_the_theme_svg('ellipsis'); ?>
 												</span>
-												<span class="toggle-text"><?php _e( 'Menu', 'sunrisenational' ); ?></span>
+												<span class="toggle-text"><?php _e('Menu', 'sunrisenational'); ?></span>
 											</span>
 										</button><!-- .nav-toggle -->
 
 									</div><!-- .nav-toggle-wrapper -->
-							</div><!-- .header-navigation-wrapper -->
+								</div><!-- .header-navigation-wrapper -->
 							</div>
 
 						</nav><!-- .primary-menu-wrapper -->
 
-				</div><!-- .header-inner -->
-			</div>
+					</div><!-- .header-inner -->
+				</div>
 		</header><!-- #masthead -->
-			<?php
-			// Output the menu modal.
-			get_template_part( 'template-parts/navigation/modal-menu' );
-			?>
+		<?php
+		// Output the menu modal.
+		get_template_part('template-parts/navigation/modal-menu');
+		?>
