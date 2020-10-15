@@ -8,39 +8,33 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package Fridays_for_Future_Paderborn
+ * @package Sunrise_National
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses fridays_for_future_paderborn_header_style()
+ * @uses sunrise_national_header_style()
  */
-function fridays_for_future_paderborn_custom_header_setup() {
-	add_theme_support(
-		'custom-header',
-		apply_filters(
-			'fridays_for_future_paderborn_custom_header_args',
-			array(
-				'default-image'      => '',
-				'default-text-color' => '000000',
-				'width'              => 1000,
-				'height'             => 250,
-				'flex-height'        => true,
-				'wp-head-callback'   => 'fridays_for_future_paderborn_header_style',
-			)
-		)
-	);
+function sunrise_national_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'sunrise_national_custom_header_args', array(
+		'default-image'          => '',
+		'default-text-color'     => '000000',
+		'width'                  => 1000,
+		'height'                 => 250,
+		'flex-height'            => true,
+		'wp-head-callback'       => 'sunrise_national_header_style',
+	) ) );
 }
-add_action( 'after_setup_theme', 'fridays_for_future_paderborn_custom_header_setup' );
+add_action( 'after_setup_theme', 'sunrise_national_custom_header_setup' );
 
-if ( ! function_exists( 'fridays_for_future_paderborn_header_style' ) ) :
+if ( ! function_exists( 'sunrise_national_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see fridays_for_future_paderborn_custom_header_setup().
+	 * @see sunrise_national_custom_header_setup().
 	 */
-	function fridays_for_future_paderborn_header_style() {
+	function sunrise_national_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*
@@ -62,9 +56,9 @@ if ( ! function_exists( 'fridays_for_future_paderborn_header_style' ) ) :
 			.site-description {
 				position: absolute;
 				clip: rect(1px, 1px, 1px, 1px);
-				}
-			<?php
-			// If the user has set a custom color for the text use that.
+			}
+		<?php
+		// If the user has set a custom color for the text use that.
 		else :
 			?>
 			.site-title a,

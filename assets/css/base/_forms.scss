@@ -1,0 +1,390 @@
+/*--------------------------------------------------------------
+# Notes
+
+- @extend the `.btn` class instead of manually adding `.btn` classes to all form elements
+
+--------------------------------------------------------------*/
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	@extend .btn;
+	@extend .btn-primary;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	@extend .form-control;
+}
+
+select {
+	@extend .form-control;
+}
+
+textarea {
+	@extend .form-control;
+}
+
+.post-password-required {
+	.post-password-form {
+		margin: 60px auto !important;
+		input[type="password"] {
+			border-radius: 0 !important;
+			border: 1px solid $black !important;
+		}
+		input[type="submit"] {
+			margin-top: -4px;
+			height: 49px;
+		}
+	}
+}
+
+.ngp-form {
+	@include media-breakpoint-up(md) {
+		max-width: map-get($container-max-widths, "lg") !important;
+	}
+	margin: 0 auto;
+	padding: 2rem;
+	@include drop-shadow;
+
+	.at input[type="checkbox"] + span:before {
+		border-color: white;
+	}
+
+	header {
+		color: $white;
+		&.at-title {
+			color: $white;
+			font-family: $font-family-serif;
+			text-align: left;
+			font-style: italic;
+			line-height: 1.2;
+			font-size: 32px;
+			margin-bottom: 0.6rem;
+			padding: 10px 0 10px 20px;
+		}
+	}
+	.UpdateMyProfile {
+		margin: 0;
+	}
+
+	.at-form {
+		.at-markup {
+			padding-right: 17.5px;
+			padding-left: 17.5px;
+			margin: 0;
+			p {
+				width: 100% !important;
+			}
+		}
+		form {
+			margin-top: 20px;
+
+			position: relative;
+			.at-fieldset {
+				padding: 0;
+			}
+			.FastAction,
+			.UpdateMyProfile {
+				display: none;
+			}
+			.SmsLegalDisclaimer p {
+				font-size: 0.5rem;
+			}
+			legend {
+				color: $white;
+				z-index: 5;
+				margin: 0;
+				display: none;
+			}
+			.at-fieldset {
+				label {
+					color: $white;
+					margin: 0;
+				}
+			}
+			.SmsLegalDisclaimer.at-markup {
+				padding: 0 !important;
+				margin-top: 0.5rem !important;
+			}
+			.SmsSubscribeMobilePhone {
+				margin-top: 1.3rem;
+			}
+			.at-row > [class^="at-"] {
+				padding: 0 1rem;
+			}
+		}
+		.at-form-submit {
+			padding: 1rem 0 0 1rem;
+			.at-submit {
+				float: left;
+				padding: 0;
+				margin: 0;
+				@include button;
+			}
+		}
+	}
+}
+
+// event styling
+.single-events {
+	article {
+		width: 100%;
+		float: left;
+		.entry-content {
+			margin: 60px;
+			@include media-breakpoint-down(md) {
+				margin-top: 2rem;
+			}
+		}
+		.wp-block-every-action-every-action-embed {
+		}
+
+		.auto-created,
+		.event-signup {
+			.ngp-form {
+				max-width: 100% !important;
+				background-color: $sunrise-background-light !important;
+				box-shadow: none;
+				padding: 0;
+				@include media-breakpoint-down(md) {
+					margin-top: 2rem;
+				}
+				.HeaderHtml p {
+					color: $black;
+				}
+				h1,
+				h2,
+				h3,
+				h4,
+				p {
+					width: 100%;
+					max-width: 100%;
+				}
+				.at-title {
+					display: none;
+				}
+				.at-form {
+					@include make-container();
+					max-width: 1200px;
+					.at-inner {
+						background-color: $white !important;
+						@include make-row();
+						.at-markup {
+							@include make-col(5);
+							padding-right: 17.5px;
+							padding-left: 17.5px;
+							@include media-breakpoint-down(md) {
+								@include make-col(12);
+							}
+						}
+						form {
+							position: relative;
+							padding-left: 17.5px;
+							padding-right: 17.5px;
+							margin: 0;
+							@include make-col(6);
+							@include make-col-offset(1);
+							@include media-breakpoint-down(md) {
+								padding-left: 0;
+								padding-right: 0;
+								@include make-col(12);
+								margin: auto;
+							}
+							legend {
+								color: $white;
+								z-index: 5;
+							}
+
+							.ContactInformation {
+								@include drop-shadow;
+								&:before {
+									content: "Sign Up to Attend";
+									color: $white;
+									font-size: 32px;
+									font-style: italic;
+									font-family: $font-family-serif;
+									display: block;
+									position: relative;
+									margin-bottom: 10px;
+								}
+							}
+
+							.at-form-submit {
+								@include drop-shadow;
+								padding: 0 2rem 2rem 2rem;
+								background-color: black;
+								margin-top: 0;
+							}
+
+							.at-row > [class^="at-"] {
+								min-width: 100%;
+							}
+							.at-fieldset {
+								background-color: $black;
+								padding: 2rem 2rem 0 2rem;
+								&.EventSignup {
+									padding: 0 2rem;
+								}
+								label {
+									color: $white;
+									padding: 0;
+									display: block;
+								}
+							}
+							.AdditionalInformation {
+								margin-top: -90px;
+							}
+						}
+					}
+				}
+			}
+			.square-image article .entry-content .at-form .at-inner {
+				form {
+					position: relative;
+					padding-left: 17.5px;
+					padding-right: 17.5px;
+					margin: 0;
+					@include make-col(4);
+					@include make-col-offset(2);
+				}
+				.at-markup {
+					@include make-col(6);
+				}
+			}
+		}
+	}
+}
+
+.ngp-form,
+.ngp-form .at-inner {
+	background-color: $black;
+
+	p {
+		color: $white;
+	}
+	.small {
+		color: $white;
+	}
+}
+.yellow .ngp-form,
+.yellow .ngp-form .at-inner {
+	background-color: $yellow;
+	header {
+		color: $black;
+		&.at-title {
+			color: black;
+		}
+	}
+	p {
+		color: $black;
+	}
+	legend {
+		color: $black;
+	}
+	.at-fieldset {
+		label {
+			color: $black;
+		}
+	}
+	.at-submit {
+		background-color: $black;
+		color: $white;
+	}
+	small {
+		color: $black;
+	}
+}
+
+.purple .ngp-form,
+.purple .ngp-form .at-inner {
+	background-color: $purple;
+	.at-submit {
+		background-color: $black !important;
+	}
+	header {
+		color: $white;
+		&.at-title {
+			color: $white;
+		}
+	}
+	p {
+		color: $white;
+	}
+	.small {
+		color: $white;
+	}
+}
+
+.white .ngp-form,
+.white .ngp-form .at-inner {
+	background-color: $white;
+	header {
+		color: $black;
+		&.at-title {
+			color: $black;
+		}
+	}
+	p {
+		color: $black;
+	}
+	legend {
+		color: $black;
+	}
+	.at-fieldset {
+		label {
+			color: $black;
+		}
+	}
+	.at input[type="checkbox"] + span:before {
+		border-color: black;
+	}
+}
+
+.light .ngp-form,
+.light .ngp-form .at-inner {
+	background-color: $sunrise-background-dark;
+	header {
+		color: $black;
+		&.at-title {
+			color: $black;
+		}
+	}
+	legend {
+		color: $black;
+	}
+	p {
+		color: $black;
+	}
+	.at-fieldset {
+		label {
+			color: $black;
+		}
+	}
+	.at input[type="checkbox"] + span:before {
+		border-color: black;
+	}
+}
+
+.no-title .at-title {
+	display: none;
+}
+
+.no-description .at-markup {
+	display: none;
+}
