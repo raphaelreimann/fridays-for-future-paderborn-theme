@@ -75,11 +75,11 @@
   "scripts": {
     "build": "webpack --mode=production",
     "dev": "webpack --watch",
-    "eslint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "eslint:fix": "eslint \"src/**/*.{js,jsx}\" --quiet --fix",
-    "format": "prettier --write \"src/**/*.{js,jsx,scss}\"",
-    "stylelint": "stylelint \"src/**/*.{css,scss}\"",
-    "stylelint:fix": "stylelint \"src/**/*.{css,scss}\" --fix",
+    "eslint": "eslint \"public/**/*.{js,jsx}\" --quiet",
+    "eslint:fix": "eslint \"public/**/*.{js,jsx}\" --quiet --fix",
+    "format": "prettier --write \"public/**/*.{js,jsx,scss}\"",
+    "stylelint": "stylelint \"public/**/*.{css,scss}\"",
+    "stylelint:fix": "stylelint \"public/**/*.{css,scss}\" --fix",
     "wp-pot": "wp-pot --src '*.php' --dest-file 'languages/_s.pot' --domain '_s'"
   },
   "dependencies": {
