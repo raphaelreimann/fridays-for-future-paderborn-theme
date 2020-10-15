@@ -461,7 +461,7 @@ table {
 a {
   color: #4169e1; }
   a:visited {
-    color: #800080; }
+    color: #0b8000; }
   a:hover, a:focus, a:active {
     color: #702619; }
   a:focus {
@@ -540,7 +540,7 @@ select {
 textarea {
   width: 100%; }
 
-/* Forms
+/* Bulma
 --------------------------------------------- */
 /*! bulma.io v0.9.1 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
@@ -8502,6 +8502,8 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   margin-right: auto;
   margin-bottom: 1.5em; }
 
+/* Bulma
+--------------------------------------------- */
 /*! bulma.io v0.9.1 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
 @keyframes spinAround {
