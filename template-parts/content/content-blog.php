@@ -29,16 +29,18 @@
 			the_title('<h2 class="entry-title"><a href="' . esc_url(get_permalink()) . '" rel="bookmark">', '</a></h2>');
 		endif;
 		?>
-		<h3>
-			<?php echo get_field('secondary_header'); ?>
-		</h3>
+		<?php if (get_field('secondary_header')) :
+			echo '<h3>' . get_field('secondary_header') . '</h3>';
+		endif
+		?>
 		<?php
 		if ('post' === get_post_type()) :
 		?>
 			<div class="entry-meta">
 				<div class="entry-details">
 					<?php
-					echo get_field('post_author');
+					fridays_for_future_paderborn_posted_by();
+					// echo get_field('post_author')['display_name'];
 					fridays_for_future_paderborn_posted_on();
 
 					?>
