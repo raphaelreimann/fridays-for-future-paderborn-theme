@@ -25,7 +25,7 @@ get_header();
 						<div class="h1-subhead-row">
 							<h4 class="h1-subhead">
 								<b>
-									Search Results for
+									Suchergebnisse für:
 								</b>
 							</h4>
 						</div>
