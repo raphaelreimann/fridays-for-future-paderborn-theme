@@ -108,7 +108,7 @@ get_template_part('template-parts/footer/nav-blocks', '');
 				<div class="to-the-top-long col-md">
 					<?php
 					/* translators: %s: HTML character for up arrow. */
-					printf(__('To the top %s', 'twentytwenty'), '<span class="arrow" aria-hidden="true">&uarr;</span>');
+					printf(__('Nach oben %s', 'twentytwenty'), '<span class="arrow" aria-hidden="true">&uarr;</span>');
 					?>
 				</div><!-- .to-the-top-long -->
 			</a><!-- .to-the-top -->
@@ -143,9 +143,9 @@ get_template_part('template-parts/footer/nav-blocks', '');
 
 			<?php } ?>
 
-			<div class="footer-pac">
+			<!-- <div class="footer-pac">
 				PAC-related content on this website is paid for by Sunrise PAC, 50 F Street NW STE #700, Washington, DC 20001. Not authorized by any candidate or candidate's committee.
-			</div>
+			</div> -->
 
 			<p class="footer-copyright">&copy;
 				<?php
@@ -154,7 +154,7 @@ get_template_part('template-parts/footer/nav-blocks', '');
 					_x('Y', 'copyright date format', 'twentytwenty')
 				);
 				?>
-				Sunrise Movement
+				Fridays for Future Paderborn
 			</p><!-- .footer-copyright -->
 
 		</div>

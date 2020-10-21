@@ -39,14 +39,14 @@
 							<h3 class="dates">
 								<?php echo get_field('dates'); ?>
 								<?php if (get_field('times')) : ?>
-									@ <?php echo get_field('times'); ?>
+									- <?php echo get_field('times'); ?>
 								<?php endif ?>
 							</h3>
 						<?php endif ?>
 					<?php endif ?>
 					<?php if (get_field('event_type')) : ?>
 						<h4 class="h1-subhead">
-							<?php echo get_field('event_type'); ?>
+							<?php echo implode(', ', get_field('event_type')); ?>
 						</h4>
 					<?php endif ?>
 
