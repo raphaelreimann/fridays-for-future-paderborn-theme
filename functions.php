@@ -23,9 +23,9 @@ if (!function_exists('fridays_for_future_paderborn_setup')) :
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on Sunrise National, use a find and replace
-		 * to change 'sunrise-national' to the name of your theme in all the template files.
+		 * to change 'fridays-for-future-paderborn' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain('sunrise-national', get_template_directory() . '/languages');
+		load_theme_textdomain('fridays-for-future-paderborn', get_template_directory() . '/languages');
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support('automatic-feed-links');
@@ -127,9 +127,9 @@ add_action('after_setup_theme', 'fridays_for_future_paderborn_content_width', 0)
 function fridays_for_future_paderborn_widgets_init()
 {
 	register_sidebar(array(
-		'name'          => esc_html__('Sidebar', 'sunrise-national'),
+		'name'          => esc_html__('Sidebar', 'fridays-for-future-paderborn'),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__('Add widgets here.', 'sunrise-national'),
+		'description'   => esc_html__('Add widgets here.', 'fridays-for-future-paderborn'),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -143,7 +143,7 @@ add_action('widgets_init', 'fridays_for_future_paderborn_widgets_init');
  */
 function fridays_for_future_paderborn_scripts()
 {
-	wp_enqueue_style('sunrise-national-style', get_stylesheet_uri());
+	wp_enqueue_style('fridays-for-future-paderborn-style', get_stylesheet_uri());
 
 	wp_enqueue_style(
 		'smvmt2020-source-serif-pro',
@@ -157,10 +157,10 @@ function fridays_for_future_paderborn_scripts()
 	);
 
 	// https://getbootstrap.com/docs/4.3/getting-started/download/#bootstrapcdn
-	wp_enqueue_script('sunrise-national-popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', array('jquery'), '20151215', true);
+	wp_enqueue_script('fridays-for-future-paderborn-popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', array('jquery'), '20151215', true);
 
-	wp_enqueue_script('sunrise-national-vendor-scripts', get_template_directory_uri() . '/assets/js/vendor.min.js', array('jquery'), '20151215', true);
-	wp_enqueue_script('sunrise-national-custom-scripts', get_template_directory_uri() . '/assets/js/custom.min.js', array('customize-preview'), '20151215', true);
+	wp_enqueue_script('fridays-for-future-paderborn-vendor-scripts', get_template_directory_uri() . '/assets/js/vendor.min.js', array('jquery'), '20151215', true);
+	wp_enqueue_script('fridays-for-future-paderborn-custom-scripts', get_template_directory_uri() . '/assets/js/custom.min.js', array('customize-preview'), '20151215', true);
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
@@ -284,52 +284,52 @@ function sunrise_color_palette()
 		'editor-color-palette',
 		array(
 			array(
-				'name' => esc_html__('Gold', 'sunrise-national'),
+				'name' => esc_html__('Gold', 'fridays-for-future-paderborn'),
 				'slug' => 'sunrise-gold',
 				'color' => '#ffde16'
 			),
 			array(
-				'name' => esc_html__('Magenta', 'sunrise-national'),
+				'name' => esc_html__('Magenta', 'fridays-for-future-paderborn'),
 				'slug' => 'sunrise-magenta',
 				'color' => '#8F0D56'
 			),
 			array(
-				'name' => esc_html__('Grey', 'sunrise-national'),
+				'name' => esc_html__('Grey', 'fridays-for-future-paderborn'),
 				'slug' => 'sunrise-grey',
 				'color' => '#33342E'
 			),
 			array(
-				'name' => esc_html__('Black', 'sunrise-national'),
+				'name' => esc_html__('Black', 'fridays-for-future-paderborn'),
 				'slug' => 'sunrise-black',
 				'color' => '#000000'
 			),
 			array(
-				'name' => esc_html__('Orange', 'sunrise-national'),
+				'name' => esc_html__('Orange', 'fridays-for-future-paderborn'),
 				'slug' => 'sunrise-orange',
 				'color' => '#fd9014'
 			),
 			array(
-				'name' => esc_html__('Red', 'sunrise-national'),
+				'name' => esc_html__('Red', 'fridays-for-future-paderborn'),
 				'slug' => 'sunrise-red',
 				'color' => '#EF4C39'
 			),
 			array(
-				'name' => esc_html__('White', 'sunrise-national'),
+				'name' => esc_html__('White', 'fridays-for-future-paderborn'),
 				'slug' => 'sunrise-white',
 				'color' => '#fff'
 			),
 			array(
-				'name' => esc_html__('Background Light', 'sunrise-national'),
+				'name' => esc_html__('Background Light', 'fridays-for-future-paderborn'),
 				'slug' => 'sunrise-background-light',
 				'color' => '#FFFFFB'
 			),
 			array(
-				'name' => esc_html__('Background Dark', 'sunrise-national'),
+				'name' => esc_html__('Background Dark', 'fridays-for-future-paderborn'),
 				'slug' => 'sunrise-background-dark',
 				'color' => '#F7F5E8'
 			),
 			array(
-				'name' => esc_html__('Green', 'sunrise-national'),
+				'name' => esc_html__('Green', 'fridays-for-future-paderborn'),
 				'slug' => 'sunrise-green',
 				'color' => '#E3EDDF'
 			)

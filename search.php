@@ -30,7 +30,7 @@ get_header();
 							</h4>
 						</div>
 						<h1 class="entry-title"><b>
-								<?php printf(esc_html__('%s', 'sunrise-national'), '<span>' . get_search_query() . '</span>'); ?>
+								<?php printf(esc_html__('%s', 'fridays-for-future-paderborn'), '<span>' . get_search_query() . '</span>'); ?>
 							</b>
 						</h1>
 					</div>

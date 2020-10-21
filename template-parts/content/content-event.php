@@ -24,7 +24,7 @@
 		the_content();
 
 		wp_link_pages(array(
-			'before' => '<div class="page-links">' . esc_html__('Pages:', 'sunrise-national'),
+			'before' => '<div class="page-links">' . esc_html__('Pages:', 'fridays-for-future-paderborn'),
 			'after'  => '</div>',
 		));
 		?>

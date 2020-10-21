@@ -1,10 +1,10 @@
 # Project Management
 
 Figma Design Files
-https://www.figma.com/file/IfGUJ91VgixZ9wG94PHZZk/Sunrise-National-Hub-Pages-Current?node-id=193%3A47
+https://www.figma.com/file/IfGUJ91VgixZ9wG94PHZZk/fridays-for-future-paderborn-Hub-Pages-Current?node-id=193%3A47
 
 Notion Wiki
-https://www.notion.so/evanmceldowney/Sunrise-National-Website-80a2f109ea7d42c181fbb19901efd354
+https://www.notion.so/evanmceldowney/fridays-for-future-paderborn-Website-80a2f109ea7d42c181fbb19901efd354
 
 Airtable Development Manager (for editability ask Evan)
 https://airtable.com/shrWWYWcB2LLxr8Le
@@ -15,7 +15,7 @@ Download flywheelby flywhee, install, and run a local instance
 https://localwp.com/
 
 Import theme in your site in app/public/wp-content/themes/ using
-git clone https://github.com/sunrisemovement/Sunrise-National-Redesign.git
+git clone https://github.com/sunrisemovement/fridays-for-future-paderborn-Redesign.git
 
 Activate theme in the wordpress admin
 

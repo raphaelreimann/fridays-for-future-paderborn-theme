@@ -7,7 +7,7 @@ Description: Sunrise National Website Wordpress Theme
 Version: 2.0.1
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: sunrise-national
+Text Domain: fridays-for-future-paderborn
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, bootstrap
 
 This theme, like WordPress, is licensed under the GPL.
@@ -428,7 +428,7 @@ body footer .footer-right .social-menu li a svg{height:28px;width:28px}
 .footer-nav-block .block-3{background-color:#000;color:#fff}
 .footer-nav-block .block-3 span:after{background-color:#fff}
 .base-page .post-header,.archive .post-header,.error-404 .post-header,.search-results .post-header{min-height:440px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative;width:100%;padding:80px;float:left;border-image-source:linear-gradient(to bottom,#8f0d56,#ef4c39,#ffde16);border-style:solid;border-image-slice:1;border-width:5px}
-.base-page .post-header::before,.archive .post-header::before,.error-404 .post-header::before,.search-results .post-header::before{position:absolute;left:calc(50% - 21px);bottom:-36px;content:"";display:block;background-image:url("/wp-content/themes/sunrise-national-redesign/assets/img/affordance.svg");z-index:200;display:block;width:40px;height:56px;background-repeat:no-repeat}
+.base-page .post-header::before,.archive .post-header::before,.error-404 .post-header::before,.search-results .post-header::before{position:absolute;left:calc(50% - 21px);bottom:-36px;content:"";display:block;background-image:url("/wp-content/themes/fridays-for-future-paderborn-redesign/assets/img/affordance.svg");z-index:200;display:block;width:40px;height:56px;background-repeat:no-repeat}
 .base-page .post-header .container,.archive .post-header .container,.error-404 .post-header .container,.search-results .post-header .container{background-repeat:no-repeat;height:100%;width:100%}
 .base-page .post-header .container .header-row,.archive .post-header .container .header-row,.error-404 .post-header .container .header-row,.search-results .post-header .container .header-row{-webkit-box-align:center;-ms-flex-align:center;align-items:center;bottom:40px}
 .base-page .post-header .container .header-row .header-blocks,.archive .post-header .container .header-row .header-blocks,.error-404 .post-header .container .header-row .header-blocks,.search-results .post-header .container .header-row .header-blocks{position:relative}
@@ -546,9 +546,9 @@ html{height:100%;min-height:100%}
 .campaign-single .campaign-header .header-background-image{left:0;top:0;position:absolute;z-index:-10;width:100%;bottom:0;background-color:#000;overflow:hidden}
 .campaign-single .campaign-header .header-background-image::before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background-color:#000;opacity:.5;z-index:1;mix-blend-mode:unset}
 .campaign-single .campaign-header .header-background-image img{width:100%;-o-object-fit:cover;object-fit:cover;height:100%}
-.campaign-single .campaign-header .site-content::before{position:absolute;left:calc(50% - 21px);bottom:-36px;content:"";display:block;background-image:url("/wp-content/themes/sunrise-national-redesign/assets/img/affordance.svg");z-index:200;display:block;width:40px;height:56px;background-repeat:no-repeat}
+.campaign-single .campaign-header .site-content::before{position:absolute;left:calc(50% - 21px);bottom:-36px;content:"";display:block;background-image:url("/wp-content/themes/fridays-for-future-paderborn-redesign/assets/img/affordance.svg");z-index:200;display:block;width:40px;height:56px;background-repeat:no-repeat}
 .home-page .post-header{position:relative;width:100%;padding:120px;float:left}
-.home-page .post-header::before{position:absolute;left:calc(50% - 21px);bottom:-36px;content:"";display:block;background-image:url("/wp-content/themes/sunrise-national-redesign/assets/img/affordance.svg");z-index:200;display:block;width:40px;height:56px;background-repeat:no-repeat}
+.home-page .post-header::before{position:absolute;left:calc(50% - 21px);bottom:-36px;content:"";display:block;background-image:url("/wp-content/themes/fridays-for-future-paderborn-redesign/assets/img/affordance.svg");z-index:200;display:block;width:40px;height:56px;background-repeat:no-repeat}
 .home-page .post-header .alignwide{background-repeat:no-repeat;height:100%;width:100%}
 .home-page .post-header .alignwide .header-row{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;bottom:40px}
 .home-page .post-header .alignwide .header-row .header-blocks{position:relative}

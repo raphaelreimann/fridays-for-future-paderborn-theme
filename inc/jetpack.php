@@ -30,7 +30,7 @@ function fridays_for_future_paderborn_jetpack_setup()
 	// Add theme support for Content Options.
 	add_theme_support('jetpack-content-options', array(
 		'post-details'    => array(
-			'stylesheet' => 'sunrise-national-style',
+			'stylesheet' => 'fridays-for-future-paderborn-style',
 			'date'       => '.posted-on',
 			'categories' => '.cat-links',
 			'tags'       => '.tags-links',

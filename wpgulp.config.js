@@ -42,8 +42,8 @@ module.exports = {
 	watchPhp: "./**/*.php", // Path to all PHP files.
 
 	// Translation options.
-	textDomain: "sunrise-national", // Your textdomain here.
-	translationFile: "sunrise-national.pot", // Name of the translation file.
+	textDomain: "fridays-for-future-paderborn", // Your textdomain here.
+	translationFile: "fridays-for-future-paderborn.pot", // Name of the translation file.
 	translationDestination: "./languages", // Where to save the translation files.
 	packageName: "WPGULP", // Package name.
 	bugReport: "https://AhmadAwais.com/contact/", // Where can users report bugs.

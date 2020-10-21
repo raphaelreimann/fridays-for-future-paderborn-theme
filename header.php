@@ -25,7 +25,7 @@
 
 <body <?php body_class(); ?>>
 	<div id="page" class="site">
-		<a class="sr-only sr-only-focusable" href="#content"><?php esc_html_e('Skip to content', 'sunrise-national'); ?></a>
+		<a class="sr-only sr-only-focusable" href="#content"><?php esc_html_e('Skip to content', 'fridays-for-future-paderborn'); ?></a>
 
 		<header id="masthead" class="site-header">
 			<div class="header-inner section-inner">
