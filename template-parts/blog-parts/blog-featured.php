@@ -53,12 +53,12 @@
 		</div>
 
 
-		<!-- <div class="col-lg-3 col-md-6 order-lg-3 ">
+		<div class="col-lg-3 col-md-6 order-lg-3 ">
 			<h4> Twitter Updates </h4>
 			<?php
 			echo do_shortcode('[custom-twitter-feeds]');
 			?>
 
-		</div> -->
+		</div>
 	</div>
 </div>

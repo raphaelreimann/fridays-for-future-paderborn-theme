@@ -10,10 +10,11 @@
 ?>
 <nav class="blog-header alignwide container" aria-label="<?php esc_attr_e('Horizontal', 'sunrisenational'); ?>" role="navigation">
 	<div class="blog-bar row">
-		<!-- <h3 class="blog-title"> <a href="/blog">
-				UPRISING NEWS
+		<h3 class="blog-title"> <a href="/blog">
+				Fridays for Future Paderborn Blog
 			</a>
-		</h3>.site-branding -->
+		</h3>
+		<!-- .site-branding -->
 		<ul class="blog-menu  d-none d-lg-block">
 			<?php
 
@@ -28,10 +29,10 @@
 			}
 			?>
 		</ul>
-		<div class="">
+		<!-- <div class="">
 			<?php
-			//	get_search_form();
+			get_search_form();
 			?>
-		</div>
+		</div> -->
 	</div>
 </nav>
