@@ -7,8 +7,8 @@
 --------------------------------------------------------------*/
 
 $white:    #fff !default;
-$sunrise-background-dark: #F7F5E8;
-$sunrise-background-light: #FFFFFB;
+$fff-background-dark: #F7F5E8;
+$fff-background-light: #FFFFFB;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
@@ -51,6 +51,8 @@ $green: #e3eddf !default;
 $teal: #20c997 !default;
 $cyan: #f7f5e8 !default;
 $light-green: #e3eddf !default;
+$dark-green: #1b7340 !default;
+$main-green: #1da64a !default;
 
 $background-color: #FFFFFB !default;
 
@@ -125,7 +127,7 @@ $spacers: map-merge(
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $sunrise-background-light !default;
+$body-bg:                   $fff-background-light !default;
 $body-color:                $gray-sunrise !default;
 
 

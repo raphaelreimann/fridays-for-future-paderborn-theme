@@ -159,7 +159,7 @@ textarea {
 		.event-signup {
 			.ngp-form {
 				max-width: 100% !important;
-				background-color: $sunrise-background-light !important;
+				background-color: $fff-background-light !important;
 				box-shadow: none;
 				padding: 0;
 				@include media-breakpoint-down(md) {
@@ -358,7 +358,7 @@ textarea {
 
 .light .ngp-form,
 .light .ngp-form .at-inner {
-	background-color: $sunrise-background-dark;
+	background-color: $fff-background-dark;
 	header {
 		color: $black;
 		&.at-title {

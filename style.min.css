@@ -226,28 +226,28 @@ svg,img,embed,object{display:block;height:auto;max-width:100%}
 .alignwide,.alignfull{max-width:100vw;width:100vw;position:relative}
 .alignfull{width:100%;max-width:100%;padding-right:17.5px;padding-left:17.5px}
 .alignwide{margin:0 auto;max-width:1200px;width:1200px}
-.has-sunrise-magenta-color{color:#8f0d56 !important}
-.has-sunrise-magenta-background-color{background:#8f0d56 !important}
-.has-sunrise-gold-color{color:#ffde16 !important}
-.has-sunrise-gold-background-color{background:#ffde16 !important}
-.has-sunrise-red-color{color:#ef4c39 !important}
-.has-sunrise-red-background-color{background:#ef4c39 !important}
-.has-sunrise-grey-color{color:#33342e !important}
-.has-sunrise-grey-background-color{background:#33342e !important}
-.has-sunrise-white-color{color:#fff !important}
-.has-sunrise-white-background-color{background:#fff !important}
-.has-sunrise-orange-color{color:#fd9014 !important}
-.has-sunrise-orange-background-color{background:#fd9014 !important}
-.has-sunrise-green-color{color:#e3eddf !important}
-.has-sunrise-green-background-color{background:#e3eddf !important}
-.has-sunrise-background-dark-color{color:#f7f5e8 !important}
-.has-sunrise-background-dark-background-color{background:#f7f5e8 !important}
-.has-sunrise-background-light-color{color:#fffffb !important}
-.has-sunrise-background-light-background-color{background:#fffffb !important}
-.has-sunrise-black-color{color:#000 !important}
-.has-sunrise-black-background-color{background:#000 !important}
-.has-sunrise-white-color{color:#fff !important}
-.has-sunrise-white-background-color{background:#fff !important}
+.has-fff-magenta-color{color:#8f0d56 !important}
+.has-fff-magenta-background-color{background:#8f0d56 !important}
+.has-fff-gold-color{color:#ffde16 !important}
+.has-fff-gold-background-color{background:#ffde16 !important}
+.has-fff-red-color{color:#ef4c39 !important}
+.has-fff-red-background-color{background:#ef4c39 !important}
+.has-fff-grey-color{color:#33342e !important}
+.has-fff-grey-background-color{background:#33342e !important}
+.has-fff-white-color{color:#fff !important}
+.has-fff-white-background-color{background:#fff !important}
+.has-fff-orange-color{color:#fd9014 !important}
+.has-fff-orange-background-color{background:#fd9014 !important}
+.has-fff-green-color{color:#e3eddf !important}
+.has-fff-green-background-color{background:#e3eddf !important}
+.has-fff-background-dark-color{color:#f7f5e8 !important}
+.has-fff-background-dark-background-color{background:#f7f5e8 !important}
+.has-fff-background-light-color{color:#fffffb !important}
+.has-fff-background-light-background-color{background:#fffffb !important}
+.has-fff-black-color{color:#000 !important}
+.has-fff-black-background-color{background:#000 !important}
+.has-fff-white-color{color:#fff !important}
+.has-fff-white-background-color{background:#fff !important}
 .post,.page{margin:0}
 .entry-content>*:not(.alignwide):not(.alignfull):not(.getwid-section-content-full-width):not(.auto-created):not(.event-signup):not(.wp-block-columns):not(.has-text-align-center):not(.ngp-form):not(.wp-block-group):not(.wp-block-separator){margin:0 auto 1rem auto;float:unset}
 .single-post .entry-content>*:not(.alignwide):not(.alignfull):not(.getwid-section-content-full-width):not(.wp-block-columns):not(.wp-block-group){margin:0 auto 1rem auto;width:100% !important;max-width:100% !important}
