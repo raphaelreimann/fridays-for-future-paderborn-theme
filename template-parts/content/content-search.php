@@ -43,7 +43,8 @@
 						<div class="entry-meta">
 							<?php
 							fridays_for_future_paderborn_posted_on();
-							echo get_field('post_author');
+							echo ' von ';
+							the_author();
 							?>
 						</div><!-- .entry-meta -->
 					<?php endif; ?>
