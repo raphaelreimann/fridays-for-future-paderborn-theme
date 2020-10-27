@@ -78,7 +78,7 @@
 							</div>
 							<div class="bottom-menu">
 								<a href="/" class="site-branding">
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/sunrise-logo.png" width="" height="" alt="Sunrise Movement Logo" />
+									<img class="branding-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/fff-logo.png" width="" height="" alt="Fridays for Future Paderborn Logo" />
 								</a><!-- .site-branding -->
 								<ul class="header-menu bottom primary-menu d-none d-md-flex">
 									<?php

@@ -269,7 +269,8 @@ article .entry-content .wp-block-columns.alignfull,article .entry-content .wp-bl
 .header-menu.top{-webkit-box-flex:1;-ms-flex:1;flex:1;display:-webkit-box;display:-ms-flexbox;display:flex;font-size:1rem;font-weight:500;letter-spacing:-0.0277em;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
 .social-menu{min-width:223px}
 .header-menu.bottom{width:100%;float:right;display:-webkit-box;display:-ms-flexbox;display:flex;font-size:1rem;font-weight:500;letter-spacing:-0.0277em;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;margin-bottom:0}
-.site-branding{float:left;width:260px}
+.site-branding{float:left;max-height:60px;max-width:70px}
+.branding-logo{max-height:60px;max-width:70px}
 .header-menu .icon::before,.header-menu .icon::after{content:"";display:block;background-color:currentColor;position:absolute;bottom:calc(50% - 0.1rem);left:0}
 .header-menu .icon::before{height:.9rem;width:.2rem}
 .header-menu .icon::after{height:.2rem;width:.9rem}
@@ -2573,7 +2574,7 @@ article .entry-content .wp-block-columns.alignwide,article .entry-content .wp-bl
 .wp-block-getwid-section .wp-block-getwid-section__wrapper .wp-block-getwid-section__inner-wrapper .wp-block-getwid-section__inner-wrapper{width:100%;padding-right:17.5px;padding-left:17.5px}
 .narrow-container{width:100%;padding-right:17.5px;padding-left:17.5px}
 .wp-block-column{padding:0 1em 60px 1em}
-.site-branding{width:170px}
+.site-branding{max-height:40px;max-width:40px}
 .site-header{display:block;position:relative;right:0;left:0;z-index:100}
 .base-page .post-header::before,.archive .post-header::before,.error-404 .post-header::before,.search-results .post-header::before{display:none}
 .base-page .post-header .header-background-image,.archive .post-header .header-background-image,.error-404 .post-header .header-background-image,.search-results .post-header .header-background-image{height:100%}

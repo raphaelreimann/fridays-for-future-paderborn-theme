@@ -65,11 +65,18 @@
 
 .site-branding {
 	float: left;
-	width: 260px;
+	max-height: 60px;
+	max-width: 70px;
 
 	@include media-breakpoint-down(md) {
-		width: 170px;
+		max-height: 40px;
+		max-width: 40px;
 	}
+}
+
+.branding-logo {
+	max-height: 60px;
+	max-width: 70px;
 }
 
 .header-menu .icon::before,
