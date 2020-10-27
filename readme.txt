@@ -9,11 +9,11 @@ Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called Sunrise National.
+A starter theme called Fridays for Future Paderborn Theme.
 
 == Description ==
 
-Custom theme: Sunrise National, developed by Me
+Custom theme: Fridays for Future Paderborn Theme, developed by Me
 
 == Installation ==
 
@@ -25,7 +25,7 @@ Custom theme: Sunrise National, developed by Me
 
 = Does this theme support any plugins? =
 
-Sunrise National includes support for Infinite Scroll in Jetpack.
+Fridays for Future Paderborn Theme includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 

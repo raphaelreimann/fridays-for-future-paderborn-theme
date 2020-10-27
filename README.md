@@ -1,25 +1,16 @@
-# Project Management
+# Fridays for Future Paderborn Wordpress Theme 🌱
 
-Figma Design Files
-https://www.figma.com/file/IfGUJ91VgixZ9wG94PHZZk/fridays-for-future-paderborn-Hub-Pages-Current?node-id=193%3A47
+This is a wordpress theme for the official Fridays for Future Paderborn Website.
 
-Notion Wiki
-https://www.notion.so/evanmceldowney/fridays-for-future-paderborn-Website-80a2f109ea7d42c181fbb19901efd354
+![Github Banner](screenshot.png)
 
-Airtable Development Manager (for editability ask Evan)
-https://airtable.com/shrWWYWcB2LLxr8Le
+## WordPress Local Setup
 
-# WordPress Local Setup
+1. Download [local by flywheel](https://localwp.com/), install, and run a local instance.
 
-Download flywheelby flywhee, install, and run a local instance
-https://localwp.com/
+2. Import theme in your site in app/public/wp-content/themes/ using `git clone https://github.com/raphaelreimann/fridays-for-future-paderborn-theme`
 
-Import theme in your site in app/public/wp-content/themes/ using
-git clone https://github.com/sunrisemovement/fridays-for-future-paderborn-Redesign.git
-
-Activate theme in the wordpress admin
-
-Import wordpress content using wordpress importer with file from https://www.notion.so/evanmceldowney/Wordpress-Content-July-23rd-38536a2f5a46498093d623d439256f3f
+3. Activate theme in the Wordpress Admin Panel
 
 ## Initial Setup
 
@@ -39,7 +30,6 @@ Once these steps are complete, you only need to run `npm start` moving forward.
 
 - `assets/css/style.scss` is the main stylesheet that contains all partials. This is compiled into `style.css`.
 - `assets/css/bootstrap` contains the Bootstrap core `.scss` files and should not be edited. Instead use `assets/css/base/_bootstrap_overrides.scss` to override the default variables.
-- Feel free to add additional partials to this theme.
 
 ### Javascript
 
@@ -56,8 +46,7 @@ If you wish to override Bootstrap's default variables, do so by redeclaring thos
 
 [More information on variable defaults](https://getbootstrap.com/docs/4.3/getting-started/theming/#variable-defaults)
 
-For more questions
-https://getbootstrap.com/docs/4.0/getting-started/introduction/
+For more questions about Bootstrap: https://getbootstrap.com/docs/4.0/getting-started/introduction/
 
 ## Automatic Form Styling
 
