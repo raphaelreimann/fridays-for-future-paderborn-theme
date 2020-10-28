@@ -5,16 +5,17 @@
 			overflow: hidden;
 		}
 		header {
-			&:after {
-				width: 100%;
-				content: "";
-				height: 5px;
-				background-image: url("assets/img/gradient-border-bottom.svg");
-				background-size: cover;
-				background-size: contain;
-				background-repeat: no-repeat;
-				display: block;
-			}
+			border-bottom: 5px $main-green solid;
+			// &:after {
+			// 	width: 100%;
+			// 	content: "";
+			// 	height: 5px;
+			// 	background-image: url("assets/img/gradient-border-bottom.svg");
+			// 	background-size: cover;
+			// 	background-size: contain;
+			// 	background-repeat: no-repeat;
+			// 	display: block;
+			// }
 		}
 
 		h1 {

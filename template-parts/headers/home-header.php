@@ -37,12 +37,12 @@
 				?>
 				<div class="button-row">
 					<?php if (get_field('button_1_url')) : ?>
-						<a href="<?php echo get_field('button_1_url'); ?>"><button class="header-button btn has-fff-white-background-color ">
+						<a href="<?php echo get_field('button_1_url'); ?>"><button class="header-button btn has-fff-white-color has-fff-dark-green-background-color ">
 								<?php echo get_field('button_1_text'); ?>
 							</button></a>
 					<?php endif ?>
 					<?php if (get_field('button_2_url')) : ?>
-						<a href="<?php echo get_field('button_2_url'); ?>"><button class="header-button btn has-fff-gold-background-color">
+						<a href="<?php echo get_field('button_2_url'); ?>"><button class="header-button btn has-fff-white-background-color">
 								<?php echo get_field('button_2_text'); ?>
 							</button></a>
 					<?php endif ?>

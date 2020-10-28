@@ -24,6 +24,7 @@ body footer {
 		}
 	}
 	.footer-left {
+		color: $footer-text;
 		li {
 			list-style: none;
 			font-family: $font-family-sans-serif;
@@ -33,7 +34,7 @@ body footer {
 			a {
 				@include underliner;
 				&:hover {
-					color: $white;
+					color: $footer-text;
 				}
 				&::after {
 					background-color: $white;
@@ -49,16 +50,16 @@ body footer {
 			width: 100%;
 		}
 		.footer-pac {
-			color: $white;
+			color: $footer-text;
 			padding: 1rem;
-			border: 1px solid $white;
+			border: 1px solid $footer-text;
 			justify-content: end;
 			font-size: 12px;
 			float: right;
 			margin-bottom: 1rem;
 		}
 		.footer-copyright {
-			color: $white;
+			color: $footer-text;
 			justify-content: end;
 			font-size: 1.4rem;
 			text-transform: uppercase;
@@ -75,7 +76,7 @@ body footer {
 			float: right;
 			margin-bottom: 0.4rem;
 			font-weight: $font-weight-bold;
-			color: $white;
+			color: $footer-text;
 			width: 100%;
 			text-align: right;
 			width: 100%;

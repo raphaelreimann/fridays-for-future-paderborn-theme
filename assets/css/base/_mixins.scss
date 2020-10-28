@@ -87,7 +87,8 @@
 }
 
 @mixin border-gradient-sunrise {
-	border-image-source: linear-gradient(to bottom, #8f0d56, #ef4c39, #ffde16);
+	// border-image-source: linear-gradient(to bottom, #8f0d56, #ef4c39, #ffde16);
+	border-image-source: linear-gradient(to bottom, $main-green, $dark-green);
 	border-style: solid;
 	border-image-slice: 1;
 	border-width: 5px;
@@ -100,7 +101,7 @@
 		bottom: -36px;
 		content: "";
 		display: block;
-		background-image: url("/wp-content/themes/fridays-for-future-paderborn-redesign/assets/img/affordance.svg");
+		background-image: url("/wp-content/themes/fridays-for-future-paderborn-theme/assets/img/affordance.svg");
 		z-index: 200;
 		display: block; //change this after launch
 		@include media-breakpoint-down(md) {
