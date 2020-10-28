@@ -109,10 +109,10 @@
 							}
 							b {
 								@include highlighter;
-								color: $black;
+								color: $dark-green;
 								margin-bottom: 1rem;
 								line-height: 1.42;
-								background-color: $yellow;
+								background-color: $white;
 								@include media-breakpoint-down(lg) {
 									margin-bottom: 20px;
 								}

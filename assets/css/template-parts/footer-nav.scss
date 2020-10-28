@@ -11,7 +11,7 @@ body footer {
 		margin-bottom: 1rem;
 		li {
 			@include button;
-			background-color: $yellow;
+			background-color: $white;
 			a {
 				color: $black;
 			}
@@ -19,7 +19,7 @@ body footer {
 				background-color: $white;
 			}
 			&:nth-child(2) {
-				background-color: $yellow;
+				background-color: $white;
 			}
 		}
 	}
@@ -33,10 +33,10 @@ body footer {
 			a {
 				@include underliner;
 				&:hover {
-					color: $yellow;
+					color: $white;
 				}
 				&::after {
-					background-color: $yellow;
+					background-color: $white;
 				}
 			}
 		}
@@ -58,7 +58,7 @@ body footer {
 			margin-bottom: 1rem;
 		}
 		.footer-copyright {
-			color: $yellow;
+			color: $white;
 			justify-content: end;
 			font-size: 1.4rem;
 			text-transform: uppercase;
@@ -75,7 +75,7 @@ body footer {
 			float: right;
 			margin-bottom: 0.4rem;
 			font-weight: $font-weight-bold;
-			color: $yellow;
+			color: $white;
 			width: 100%;
 			text-align: right;
 			width: 100%;
@@ -156,7 +156,7 @@ body footer {
 		}
 	}
 	.block-2 {
-		background-color: $yellow;
+		background-color: $white;
 		color: $black;
 		span {
 			&:after {

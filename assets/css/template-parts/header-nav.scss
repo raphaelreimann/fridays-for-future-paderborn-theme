@@ -18,14 +18,13 @@
 }
 
 .bottom-menu {
-	background-color: $black;
+	background-color: $dark-green;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	float: left;
-	padding: 0 15px;
-	padding-bottom: 0;
+	padding: 5px 15px;
 	min-height: 60px;
 }
 
@@ -65,18 +64,18 @@
 
 .site-branding {
 	float: left;
-	max-height: 60px;
-	max-width: 70px;
+	max-height: 80px;
+	max-width: 80px;
 
 	@include media-breakpoint-down(md) {
-		max-height: 40px;
-		max-width: 40px;
+		max-height: 70px;
+		max-width: 70px;
 	}
 }
 
 .branding-logo {
-	max-height: 60px;
-	max-width: 70px;
+	max-height: 100%;
+	max-width: 100%;
 }
 
 .header-menu .icon::before,
@@ -132,7 +131,7 @@
 		text-decoration: none;
 	}
 	&:after {
-		background-color: $yellow;
+		background-color: $white;
 	}
 }
 
@@ -164,8 +163,8 @@
 	&:hover,
 	&:active,
 	&:focus {
-		color: $yellow !important;
-		fill: $yellow;
+		color: $white !important;
+		fill: $white;
 		background: none !important;
 		box-shadow: none !important;
 	}
@@ -319,7 +318,7 @@ body.touch-enabled .primary-menu ul li.menu-item-has-children > a {
 	button {
 		background: $black;
 		svg {
-			fill: $yellow;
+			fill: $white;
 			margin: auto;
 		}
 	}
@@ -412,7 +411,7 @@ button.close-nav-toggle .toggle-text {
 }
 
 .mobile-menu {
-	background-color: $yellow;
+	background-color: $white;
 }
 
 .modal-menu li {
@@ -423,7 +422,7 @@ button.close-nav-toggle .toggle-text {
 	margin: 0;
 	border-top: 1px solid $gray-sunrise;
 	li {
-		background-color: $yellow;
+		background-color: $white;
 	}
 	&:last-of-type {
 		border-bottom: 1px solid $gray-sunrise;
@@ -448,7 +447,7 @@ button.close-nav-toggle .toggle-text {
 }
 
 .modal-menu > li.smvmt2020-highlight--yellow a {
-	background: $yellow;
+	background: $white;
 }
 
 .modal-menu > li > a,
@@ -478,7 +477,7 @@ button.close-nav-toggle .toggle-text {
 }
 
 .modal-menu ul.sub-menu {
-	background-color: $yellow;
+	background-color: $white;
 	z-index: 100;
 	padding: 0;
 	> .menu-item a {
@@ -495,7 +494,7 @@ button.sub-menu-toggle {
 	padding: 0 26px;
 	background: none !important;
 	svg {
-		fill: $yellow;
+		fill: $white;
 	}
 }
 
@@ -639,19 +638,19 @@ button.sub-menu-toggle.active svg {
 ul.social-icons {
 	display: flex;
 	flex-wrap: wrap;
-	margin: -0.9rem -0.9rem 0 0;
+	margin: -0.7rem -0.9rem 0 0;
 	width: calc(100% + 0.9rem);
 	float: right;
 }
 
 ul.social-icons li {
 	list-style-type: none;
-	margin: 1.55rem 0.9rem 0 0;
+	margin: 0.9rem 0.9rem 0.4rem 0;
 }
 
 .social-icons a {
 	align-items: center;
-	background: $yellow;
+	background: $white;
 	border-radius: 50%;
 	color: $gray-sunrise;
 	display: flex;
@@ -688,7 +687,7 @@ ul.social-icons li {
 	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: normal;
-	color: $yellow;
+	color: $white;
 }
 
 .secondary-menu li a {
@@ -713,7 +712,7 @@ ul.social-icons li {
 	margin-right: 12px;
 	margin-top: 4px;
 	float: left;
-	fill: $yellow;
+	fill: $white;
 }
 
 .site-title a,
@@ -737,7 +736,7 @@ ul.social-icons li {
 .header-footer-group .color-accent,
 .header-footer-group .color-accent-hover:hover {
 	text-decoration: none;
-	color: $yellow;
+	color: $white;
 }
 
 .primary-menu li.btn {
@@ -792,23 +791,23 @@ ul.primary-menu {
 .primary-menu ul {
 	border-radius: 0px;
 	background-color: rgb(51, 52, 46);
-	color: $yellow !important;
+	color: $white !important;
 }
 
 .primary-menu > li > ul {
-	border-top: 3px $yellow solid;
+	border-top: 3px $white solid;
 }
 
 .primary-menu > li > ul:after {
-	border-bottom-color: $yellow;
+	border-bottom-color: $white;
 }
 
 .primary-menu > li > ul > li > ul {
-	border-right: 3px $yellow solid;
+	border-right: 3px $white solid;
 }
 
 .primary-menu > li > ul > li > ul:after {
-	border-left-color: $yellow;
+	border-left-color: $white;
 }
 
 .primary-menu ul li.menu-item-has-children:hover > ul,
@@ -829,12 +828,12 @@ ul.primary-menu {
 .footer-menu a,
 .footer-menu a:hover {
 	text-decoration: none;
-	color: $yellow !important;
+	color: $white !important;
 }
 
 .footer-menu .smvmt2020-highlight > a,
 .footer-menu .smvmt2020-highlight > a:hover {
 	color: rgb(51, 52, 46) !important;
 	padding: 12px 18px;
-	background: $yellow;
+	background: $white;
 }

@@ -59,7 +59,7 @@
 					&.header-content {
 						.h1-subhead {
 							b {
-								color: $yellow;
+								color: $white;
 							}
 						}
 
@@ -151,7 +151,7 @@
 		.thankYou {
 			display: block;
 			z-index: 100;
-			background-color: $yellow;
+			background-color: $white;
 			text-align: center;
 			font-weight: bold;
 			margin: 0 auto;
@@ -167,7 +167,7 @@
 		}
 		.at-inner {
 			padding: 35px 0;
-			background-color: $yellow;
+			background-color: $white;
 			@include media-breakpoint-up(md) {
 				margin-top: -13rem;
 			}
