@@ -38,10 +38,10 @@ get_template_part('template-parts/blog-parts/blog-navigation');
 		<div class="border-gradient-sunrise col-sm-7">
 			<div>
 				<h4 class="post-footer-text">
-					Want to start taking action to make a difference? Join one of upcoming campaigns and get involved
+					Du möchstest bei den nächsten Fridays for Future Aktionen in Paderborn teilnehmen?
 				</h4>
 				<a href=""><button>
-						Take Action with Sunrise
+						Nächste Aktionen
 					</button></a>
 			</div>
 		</div>

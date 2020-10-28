@@ -24,7 +24,7 @@ get_header();
 						<div class="h1-subhead-row">
 							<h4 class="h1-subhead">
 								<b>
-									Sunrise Movement's
+									Fridays for Future Paderborn
 								</b>
 							</h4>
 						</div>
