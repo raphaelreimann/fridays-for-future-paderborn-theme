@@ -43,8 +43,6 @@ get_header();
         <div class="list-container">
             <div class="narrow-container">
                 <?php if (have_posts()) :
-                ?>
-                <?php
 
                     /* Start the Loop */
                     while (have_posts()) :
@@ -63,7 +61,7 @@ get_header();
                     //     'prev_text' => 'Ältere Beiträge',
                     //     'next_text' => 'Neuere Beiträge'
                     // ));
-                    // the_posts_pagination(array());
+                    // the_posts_pagination();
                     echo paginate_links();
 
                 else :
