@@ -284,53 +284,63 @@ function sunrise_color_palette()
 		'editor-color-palette',
 		array(
 			array(
+				'name' => esc_html__('Main Green', 'fridays-for-future-paderborn'),
+				'slug' => 'fff-main-green',
+				'color' => '#1da64a'
+			),
+			array(
+				'name' => esc_html__('Dark Green', 'fridays-for-future-paderborn'),
+				'slug' => 'fff-dark-green',
+				'color' => '#1b7340'
+			),
+			array(
 				'name' => esc_html__('Gold', 'fridays-for-future-paderborn'),
-				'slug' => 'sunrise-gold',
+				'slug' => 'fff-gold',
 				'color' => '#ffde16'
 			),
 			array(
 				'name' => esc_html__('Magenta', 'fridays-for-future-paderborn'),
-				'slug' => 'sunrise-magenta',
+				'slug' => 'fff-magenta',
 				'color' => '#8F0D56'
 			),
 			array(
 				'name' => esc_html__('Grey', 'fridays-for-future-paderborn'),
-				'slug' => 'sunrise-grey',
+				'slug' => 'fff-grey',
 				'color' => '#33342E'
 			),
 			array(
 				'name' => esc_html__('Black', 'fridays-for-future-paderborn'),
-				'slug' => 'sunrise-black',
+				'slug' => 'fff-black',
 				'color' => '#000000'
 			),
 			array(
 				'name' => esc_html__('Orange', 'fridays-for-future-paderborn'),
-				'slug' => 'sunrise-orange',
+				'slug' => 'fff-orange',
 				'color' => '#fd9014'
 			),
 			array(
 				'name' => esc_html__('Red', 'fridays-for-future-paderborn'),
-				'slug' => 'sunrise-red',
+				'slug' => 'fff-red',
 				'color' => '#EF4C39'
 			),
 			array(
 				'name' => esc_html__('White', 'fridays-for-future-paderborn'),
-				'slug' => 'sunrise-white',
+				'slug' => 'fff-white',
 				'color' => '#fff'
 			),
 			array(
 				'name' => esc_html__('Background Light', 'fridays-for-future-paderborn'),
-				'slug' => 'sunrise-background-light',
+				'slug' => 'fff-background-light',
 				'color' => '#FFFFFB'
 			),
 			array(
 				'name' => esc_html__('Background Dark', 'fridays-for-future-paderborn'),
-				'slug' => 'sunrise-background-dark',
+				'slug' => 'fff-background-dark',
 				'color' => '#F7F5E8'
 			),
 			array(
 				'name' => esc_html__('Green', 'fridays-for-future-paderborn'),
-				'slug' => 'sunrise-green',
+				'slug' => 'fff-green',
 				'color' => '#E3EDDF'
 			)
 		)
