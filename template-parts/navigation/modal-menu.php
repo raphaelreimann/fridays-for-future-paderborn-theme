@@ -19,7 +19,7 @@
 			<div class="menu-top">
 
 				<button class="menu-modal-close-button toggle close-nav-toggle fill-children-current-color" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".menu-modal">
-					<span class="toggle-text"><?php _e('Close Menu', 'sunrisenational'); ?></span>
+					<span class="toggle-text"><?php _e('Menü schließen', 'sunrisenational'); ?></span>
 					<?php sunrisenational_the_theme_svg('cross'); ?>
 				</button><!-- .nav-toggle -->
 

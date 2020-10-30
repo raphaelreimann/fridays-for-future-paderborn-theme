@@ -99,12 +99,12 @@
 
 									<div class="toggle-wrapper nav-toggle-wrapper has-expanded-menu">
 
-										<button class="toggle nav-toggle desktop-nav-toggle btn btn-dark" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
+										<button class="toggle nav-toggle desktop-nav-toggle btn " data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
 											<span class="toggle-inner">
 												<span class="toggle-icon">
 													<?php sunrisenational_the_theme_svg('ellipsis'); ?>
 												</span>
-												<span class="toggle-text"><?php _e('Menu', 'sunrisenational'); ?></span>
+												<span class="toggle-text">Menü</span>
 											</span>
 										</button><!-- .nav-toggle -->
 

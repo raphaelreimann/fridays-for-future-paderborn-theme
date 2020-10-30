@@ -316,7 +316,7 @@ body.touch-enabled .primary-menu ul li.menu-item-has-children > a {
 .header-toggles {
 	float: right;
 	button {
-		background: $black;
+		background: $main-green;
 		svg {
 			fill: $white;
 			margin: auto;
@@ -688,6 +688,7 @@ ul.social-icons li {
 	font-weight: 700;
 	letter-spacing: normal;
 	color: $white;
+	display: block;
 }
 
 .secondary-menu li a {
