@@ -402,18 +402,19 @@ body footer .footer-top li:hover{opacity:.8;-webkit-transition:.4s opacity ease;
 body footer .footer-top li a{color:#000}
 body footer .footer-top li:nth-child(1){background-color:#fff}
 body footer .footer-top li:nth-child(2){background-color:#fff}
-body footer .footer-left{color:#adb5bd}
+body footer .footer-left{color:#ced4da}
 body footer .footer-left li{list-style:none;font-family:Source Sans Pro,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-weight:700;text-transform:uppercase;line-height:2}
-body footer .footer-left li a{position:relative;text-decoration:none;-webkit-transition:.25s all ease-out;transition:.25s all ease-out;text-decoration:none}
+body footer .footer-left li a{position:relative;text-decoration:none;-webkit-transition:.25s all ease-out;transition:.25s all ease-out;text-decoration:none;color:#ced4da}
 body footer .footer-left li a:hover,body footer .footer-left li a:focus,body footer .footer-left li a:active{cursor:pointer}
 body footer .footer-left li a:hover:after,body footer .footer-left li a:focus:after,body footer .footer-left li a:active:after{width:100%}
 body footer .footer-left li a:after{content:"";position:absolute;left:0;bottom:-0.15rem;height:.15rem;background-color:#1da64a;width:0;-webkit-transition:.25s all ease-out;transition:.25s all ease-out;display:block}
-body footer .footer-left li a:hover{color:#adb5bd}
-body footer .footer-left li a::after{background-color:#fff}
+body footer .footer-left li a:hover{color:#ced4da}
+body footer .footer-left li a::after{background-color:#ced4da}
 body footer .footer-right .footer-social-wrapper{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:end;float:right;margin-bottom:1rem;width:100%}
-body footer .footer-right .footer-pac{color:#adb5bd;padding:1rem;border:1px solid #adb5bd;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:end;font-size:12px;float:right;margin-bottom:1rem}
-body footer .footer-right .footer-copyright{color:#adb5bd;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:end;font-size:1.4rem;text-transform:uppercase;font-weight:700;font-family:Source Sans Pro,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";float:right;margin-bottom:1rem}
-body footer .footer-right .to-the-top{float:right;margin-bottom:.4rem;font-weight:700;color:#adb5bd;width:100%;text-align:right;width:100%}
+body footer .footer-right .footer-social-wrapper a{background-color:#ced4da}
+body footer .footer-right .footer-pac{color:#ced4da;padding:1rem;border:1px solid #ced4da;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:end;font-size:12px;float:right;margin-bottom:1rem}
+body footer .footer-right .footer-copyright{color:#ced4da;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:end;font-size:1.4rem;text-transform:uppercase;font-weight:700;font-family:Source Sans Pro,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";float:right;margin-bottom:1rem}
+body footer .footer-right .to-the-top{float:right;margin-bottom:.4rem;font-weight:700;color:#ced4da;width:100%;text-align:right;width:100%}
 body footer .footer-right .social-menu{margin-top:.5rem;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
 body footer .footer-right .social-menu li{margin-top:0}
 body footer .footer-right .social-menu li a svg{height:28px;width:28px}

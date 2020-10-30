@@ -33,11 +33,12 @@ body footer {
 			line-height: 2;
 			a {
 				@include underliner;
+				color: $footer-text;
 				&:hover {
 					color: $footer-text;
 				}
 				&::after {
-					background-color: $white;
+					background-color: $footer-text;
 				}
 			}
 		}
@@ -47,7 +48,10 @@ body footer {
 			justify-content: end;
 			float: right;
 			margin-bottom: 1rem;
-			width: 100%;
+			width: 100%;			
+			a {
+				background-color: $footer-text;
+			}			
 		}
 		.footer-pac {
 			color: $footer-text;
