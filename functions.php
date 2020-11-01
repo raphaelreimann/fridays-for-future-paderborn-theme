@@ -581,3 +581,6 @@ if (function_exists('acf_add_options_page')) {
 
 	acf_add_options_page();
 }
+
+remove_filter('the_content', 'wptexturize');
+remove_filter('the_title', 'wptexturize');
