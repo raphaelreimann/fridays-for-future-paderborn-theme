@@ -25,6 +25,10 @@
 			<div class="cat-links">
 				<?php $categories = get_the_category();
 
+				$categories = array_filter($categories, function ($var) {
+					return $var->name != "Featured";
+				});
+
 				if (!empty($categories)) {
 					echo esc_html($categories[0]->name);
 				}
@@ -37,7 +41,7 @@
 			</div>
 			<div class="entry-meta">
 				<?php
-				echo get_field('post_author');
+				echo get_field('post_author')["display_name"];
 				?>
 			</div><!-- .entry-meta -->
 		</header><!-- .entry-header -->

@@ -11,7 +11,7 @@
 ?>
 
 <aside id="secondary" class="widget-area content-sidebar">
-	<h4> Featured Posts</h4>
+	<h4> Weitere Posts</h4>
 	<?php
 	// the query
 	$the_query = new WP_Query(array(
