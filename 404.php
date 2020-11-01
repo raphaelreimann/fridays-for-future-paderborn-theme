@@ -24,7 +24,7 @@ get_header();
 						<div class="header-blocks header-content col-md-6">
 							<h1 class="entry-title">
 								<b>
-									Oops! That page can&rsquo;t be found.
+									Ups! Diese Seite wurde nicht gefunden.
 								</b>
 							</h1>
 						</div>
@@ -41,7 +41,7 @@ get_header();
 
 			<div class="page-content entry-content">
 				<div class="row">
-					<p class="col-md-6"><?php esc_html_e('It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'fridays-for-future-paderborn'); ?></p>
+					<p class="col-md-6"><?php esc_html_e('Hier wurde anscheinend nichts gefunden. Vielleicht hilft eine Suche?', 'fridays-for-future-paderborn'); ?></p>
 					<div class="col-md-6 text-align-right">
 						<?php
 						get_search_form();
