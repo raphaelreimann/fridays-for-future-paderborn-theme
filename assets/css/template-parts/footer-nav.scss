@@ -153,7 +153,7 @@ body footer {
 		}
 	}
 	.block-1 {
-		background-color: $purple;
+		background-color: $dark-green;
 		span {
 			&:after {
 				background-color: $white;
@@ -161,16 +161,16 @@ body footer {
 		}
 	}
 	.block-2 {
-		background-color: $white;
-		color: $black;
+		background-color: $main-green;
+		color: $white;
 		span {
 			&:after {
-				background-color: $black;
+				background-color: $white;
 			}
 		}
 	}
 	.block-3 {
-		background-color: $black;
+		background-color: $gray-800;
 		color: $white;
 		span {
 			&:after {
