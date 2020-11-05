@@ -424,7 +424,7 @@ function cptui_register_my_cpts()
 		"supports" => ["title", "editor", "thumbnail", "excerpt", "custom-fields", "page-attributes", "post-formats"],
 	];
 
-	register_post_type("campaign", $args);
+	// register_post_type("campaign", $args);
 
 	/**
 	 * Post Type: Past Wins.
@@ -459,7 +459,7 @@ function cptui_register_my_cpts()
 		"supports" => ["title", "editor", "thumbnail", "excerpt", "custom-fields", "page-attributes", "post-formats"],
 	];
 
-	register_post_type("actions", $args);
+	// register_post_type("actions", $args);
 
 	/**
 	 * Post Type: Endorsements.
@@ -522,8 +522,9 @@ function cptui_register_my_cpts()
 			'rewrite' => array('slug' => 'status'),
 		));
 	}
+	// end endorsements
 
-	register_post_type("our_endorsements", $args);
+	// register_post_type("our_endorsements", $args);
 
 	/**
 	 * Post Type: Events/Trainings.
@@ -557,6 +558,7 @@ function cptui_register_my_cpts()
 		"hierarchical" => true,
 		"rewrite" => ["slug" => "events", "with_front" => true],
 		"query_var" => true,
+		"menu_icon" => "dashicons-megaphone",
 		"supports" => ["title", "editor", "thumbnail", "excerpt", "custom-fields", "page-attributes", "post-formats"],
 		"taxonomies" => ["campaigns"],
 	];

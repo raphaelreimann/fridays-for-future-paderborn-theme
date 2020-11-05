@@ -1,10 +1,10 @@
 /*!
-Theme Name: Sunrise National Theme
-Theme URI: www.sunrisemovement.org
-Author: Evan McEldowney
-Author URI: evanmceldowney@gmail.com
-Description: Sunrise National Website Wordpress Theme
-Version: 2.0.1
+Theme Name: Fridays for Future Paderborn Theme
+Theme URI: www.fridaysforfuturepaderborn.org
+Author: Raphael Reimann
+Author URI: reimannraphael@gmail.com
+Description: Fridays for Future Paderborn Website Wordpress Theme
+Version: 1.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: fridays-for-future-paderborn
@@ -13,7 +13,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-Sunrise National is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+This theme is based on the Sunrise National Website theme which itself is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 */
 
@@ -28,6 +28,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 @import "./base/plugin";
 @import "./base/getwid";
 @import "./base/components";
+@import "./base/fonts";
 @import "./base/type";
 @import "./base/base";
 @import "./base/colors";

@@ -34,7 +34,7 @@
 						<h3 class="dates">
 							<?php echo get_field('dates'); ?>
 							<?php if (get_field('times')) : ?>
-								@ <?php echo get_field('times'); ?>
+								um <?php echo get_field('times'); ?> Uhr
 							<?php endif ?>
 						</h3>
 					<?php endif ?>
